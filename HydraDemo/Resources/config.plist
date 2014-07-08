@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Default</key>
+	<dict>
+		<key>Bootstrap</key>
+		<string>Bootstrap</string>
+		<key>AppVersion</key>
+		<string>1.2.0</string>
+		<key>AppName</key>
+		<string>com.marykay.china.mobilityApp</string>
+		<key>UserAgentSuffix</key>
+		<string>MaryKayMobility</string>
+		<key>ServerAddress</key>
+		<string>http://app.dev.mkwap.cn/client/</string>
+		<key>OmnitureTrackingServer</key>
+		<string>marykay.122.2o7.net</string>
+		<key>OmnitureReportSuiteIDs</key>
+		<string>marykaychinamobileappintouchdev</string>
+	</dict>
+</dict>
+</plist>
