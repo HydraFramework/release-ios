@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2239AB6A196D0162007EA79A /* libEOSStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2239AB69196D0162007EA79A /* libEOSStatic.a */; };
 		2256DA68196BE2DD00830A10 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA67196BE2DD00830A10 /* Settings.bundle */; };
 		2256DA6E196BE51F00830A10 /* Archive.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA6A196BE51F00830A10 /* Archive.zip */; };
 		2256DA6F196BE51F00830A10 /* busy_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA6B196BE51F00830A10 /* busy_background.png */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2239AB69196D0162007EA79A /* libEOSStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEOSStatic.a; path = "../../hydra-ios/build/Debug-iphoneos/libEOSStatic.a"; sourceTree = "<group>"; };
 		2256DA67196BE2DD00830A10 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2256DA6A196BE51F00830A10 /* Archive.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Archive.zip; sourceTree = "<group>"; };
 		2256DA6B196BE51F00830A10 /* busy_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busy_background.png; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2239AB6A196D0162007EA79A /* libEOSStatic.a in Frameworks */,
 				225EB5A5196BDF2A00ABB668 /* CoreGraphics.framework in Frameworks */,
 				225EB5A7196BDF2A00ABB668 /* UIKit.framework in Frameworks */,
 				225EB5A3196BDF2A00ABB668 /* Foundation.framework in Frameworks */,
@@ -127,6 +130,7 @@
 		225EB5A1196BDF2A00ABB668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2239AB69196D0162007EA79A /* libEOSStatic.a */,
 				225EB5A2196BDF2A00ABB668 /* Foundation.framework */,
 				225EB5A4196BDF2A00ABB668 /* CoreGraphics.framework */,
 				225EB5A6196BDF2A00ABB668 /* UIKit.framework */,
@@ -387,6 +391,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -420,6 +428,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

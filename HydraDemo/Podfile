@@ -17,4 +17,4 @@ pod 'curl',:git=>"https://github.com/HydraFramework/HydraDependencyCURL.git"
 pod 'Box2D',:git=>"https://github.com/HydraFramework/HydraDependencyBox2D.git"
 pod 'sqlcipher',:git=>"https://github.com/HydraFramework/HydraDependencySqlCipher.git"
 
-pod 'Hydra',:git=>"https://github.com/HydraFramework/release-ios.git"
+#pod 'Hydra',:git=>"https://github.com/HydraFramework/release-ios.git"
