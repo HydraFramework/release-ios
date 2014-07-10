@@ -17,4 +17,6 @@
 
 - (NSString *) getLoadModel;
 
+- (NSString *) _LUA_resolveFile: (NSString *) path;
+
 @end
