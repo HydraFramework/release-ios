@@ -15,6 +15,7 @@
 @interface ViewWidget : AbstractUIWidget<IViewWidget>{
     NSMutableArray *subitems;
     
+    CGRect contentRect;
     UIView *view;
 }
 
