@@ -23,6 +23,12 @@ dest = self.model.key;\
 }\
 
 #define APPLY_DIRTY_MODEL_PROP_DO(key, dest) \
+if (self.stableModel.key != self.model.key && ![self.stableModel.key isEqual: self.model.key]) {\
+self.stableModel.key = self.model.key;\
+dest;\
+}\
+
+#define APPLY_DIRTY_MODEL_PROP_EQ_DO(key, dest) \
 if (self.stableModel.key != self.model.key) {\
 self.stableModel.key = self.model.key;\
 dest;\
@@ -54,6 +60,11 @@ dest;\
     BOOL created;
     
     int ref;
+    
+    CGRect selfRect;
+    BOOL selfRectDirty;
+    
+    BOOL resetBeforeDataProvider;
     
     @public
     CGRect currentRect;
@@ -129,6 +140,8 @@ dest;\
 
 - (void) onResumeLayout;
 - (void) onReload;
+
+- (void) doResetBeforeDataProvider;
 
 - (BOOL) isVisible;
 

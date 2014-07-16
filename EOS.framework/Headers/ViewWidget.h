@@ -26,4 +26,5 @@
 
 - (void) reLayoutChildren;
 - (void) removeAllChildren;
+- (NSUInteger) childrenCount;
 @end
