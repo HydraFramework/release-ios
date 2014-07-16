@@ -19,6 +19,10 @@
 
 - (void) reload;
 
+- (void) reset;
+
+- (void) mark;
+
 - (NSDictionary *) getModel;
 
 - (void) suspendLayout;
