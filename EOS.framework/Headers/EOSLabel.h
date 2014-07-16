@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class LabelM;
+@class LabelWidget;
 @class PageSandbox;
 
 typedef enum VerticalAlignment {
@@ -25,6 +25,6 @@ typedef enum VerticalAlignment {
 
 @property (nonatomic, assign) VerticalAlignment verticalAlign;
 @property (nonatomic, assign) PageSandbox *pageSandbox;
-@property (nonatomic, assign) LabelM *model;
+@property (nonatomic, assign) LabelWidget *widget;
 
 @end
