@@ -94,7 +94,7 @@ dest;\
 
 - (void) removeFromSuperview;
 
-- (void) createView;
+- (NSUInteger) createView;
 
 /**invoked when this widget is fully created.*/
 - (void) onCreated;
@@ -142,6 +142,8 @@ dest;\
 - (void) onReload;
 
 - (void) doResetBeforeDataProvider;
+
+- (void) onHiddenChanged;
 
 - (BOOL) isVisible;
 

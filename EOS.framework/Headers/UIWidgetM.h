@@ -73,7 +73,10 @@ typedef enum{
 @property (nonatomic, assign) BOOL hidden;
 
 @property (nonatomic, readonly) NSString *itemId;
-@property (nonatomic, readonly) NSMutableDictionary *itemDic;
+@property (nonatomic, readonly) NSString *qName;
+
+//@property (nonatomic, readonly) NSMutableDictionary *itemDic;
+
 @property (nonatomic, readonly) NSString *data;
 
 @property (nonatomic, strong) NSObject *onchange;

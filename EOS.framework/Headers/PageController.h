@@ -15,7 +15,6 @@
 
 @interface PageController : UIViewController <PagePanel, MFMessageComposeViewControllerDelegate>{
     NSURL *pageURL;
-    PageM *model;
     PageSandbox *pageSandbox;
     
     ViewWidget *root;
@@ -27,8 +26,11 @@
     UIViewController<PagePanel> *parent;
     
     BOOL created;
+    BOOL scriptLoaded;
     
     NSTimeInterval lastOnFronted;
 }
+
+@property (nonatomic, strong) PageM *model;
 
 @end

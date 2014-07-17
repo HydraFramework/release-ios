@@ -17,6 +17,8 @@
     
     CGRect contentRect;
     UIView *view;
+    
+    BOOL initedSubview;
 }
 
 - (void) addWidget: (AbstractUIWidget *) widget;
@@ -26,5 +28,10 @@
 
 - (void) reLayoutChildren;
 - (void) removeAllChildren;
+
+#ifdef DEBUG_EOS
 - (NSUInteger) childrenCount;
+- (NSUInteger) affectCount;
+#endif
+
 @end
