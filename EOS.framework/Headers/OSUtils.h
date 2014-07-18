@@ -50,6 +50,8 @@
 
 + (void) executeDirect: (NSObject *) script withSandbox: (PageSandbox *) sandbox withObject: (NSObject *) obj1 withObject: (NSObject *) obj2;
 
++ (NSObject *) getObject: (NSObject *) delegate withObject: (NSObject *) obj1 withObject: (NSObject *) obj2 withObject: (NSObject *) obj3 withObject: (NSObject *) obj4;
+
 + (NSObject *) getObject: (NSObject *) delegate withObject: (NSObject *) obj1 withObject: (NSObject *) obj2 withObject: (NSObject *) obj3;
 
 + (NSInteger) getInteger: (NSObject *) delegate withObject: (NSObject *) obj1 withObject: (NSObject *) obj2 withObject: (NSObject *) obj3;

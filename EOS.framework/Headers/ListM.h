@@ -30,6 +30,8 @@
 @property (nonatomic, strong) NSObject *__section_footer_data;
 
 @property (nonatomic, strong) NSObject *__row_height;
+@property (nonatomic, strong) NSObject *__set_row_height;
+
 @property (nonatomic, strong) NSObject *__row_data;
 @property (nonatomic, strong) NSObject *__row_count;
 
