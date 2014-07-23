@@ -53,6 +53,8 @@
 
 - (void) reloadPage: (AppParam *) params;
 
+- (void) reloadTopSize;
+
 -(NSString *)bootAppId;
 
 - (void) startBusy: (NSString *) ycenter withTitle: (NSString *) title;

@@ -113,12 +113,6 @@ dest;\
 /**invoked when this widget is move to backend of this screen*/
 - (void) onBackend;
 
-/**reload children size with layout, return minimal size of self as excepted.*/
-//- (CGSize) reloadSize: (CGSize) mySize;
-
-/** Tell parent what's the exactly size of the widget */
-//- (CGSize) caculateSize: (CGSize) parentSize;
-
 /** Tell parent what's the exactly rect of the widget, parent size should not include it's padding */
 - (CGRect) measureRect: (CGSize) parentContentSize;
 - (CGRect) measureSelfRect: (CGSize) parentContentSize;
