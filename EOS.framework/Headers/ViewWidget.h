@@ -21,6 +21,9 @@
     BOOL initedSubview;
 }
 
+@property (nonatomic, readonly) ViewM *model;
+@property (nonatomic, readonly) ViewM *stableModel;
+
 - (void) addWidget: (AbstractUIWidget *) widget;
 - (void) addWidget: (AbstractUIWidget *) widget At: (int) idx;
 

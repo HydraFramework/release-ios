@@ -25,6 +25,8 @@
 
 - (NSDictionary *) getModel;
 
+- (NSString *) getXml;
+
 - (void) suspendLayout;
 
 - (void) resumeLayout;

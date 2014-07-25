@@ -70,4 +70,6 @@
 
 + (void) unRef: (NSObject *) ref;
 
++ (UIImage *) imageFromDataString: (NSString *) srcString;
+
 @end

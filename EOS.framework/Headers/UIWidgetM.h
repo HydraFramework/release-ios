@@ -96,5 +96,8 @@ typedef enum{
 - (BOOL) parseTransform: (NSArray *) value;
 - (NSArray *) buildTransform;
 
+- (void) fillSelfDic: (NSMutableDictionary *) dic;
+
 - (void) fillDic: (NSMutableDictionary *) dic;
+
 @end
