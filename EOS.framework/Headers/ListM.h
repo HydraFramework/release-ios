@@ -33,6 +33,7 @@
 @property (nonatomic, strong) NSObject *__set_row_height;
 
 @property (nonatomic, strong) NSObject *__row_data;
+@property (nonatomic, strong) NSObject *__row_layout;
 @property (nonatomic, strong) NSObject *__row_count;
 
 @property (nonatomic, strong) NSObject *__index_titles;

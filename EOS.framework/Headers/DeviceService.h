@@ -13,7 +13,7 @@
 #import "LuaFunction.h"
 #import "ViewWidget.h"
 
-@interface DeviceService : AbstractLuaTableCompatible <IService> {
+@interface DeviceService : AbstractLuaTableCompatible <IService, MFMessageComposeViewControllerDelegate> {
     lua_State *L;
     NSMutableDictionary *soundMap;
 }
@@ -23,8 +23,13 @@
 - (NSNumber *) getWlan;
 
 - (NSString *) getUserAgent;
+
 - (void) setUserAgent: (NSString *) ua;
 
 - (NSNumber *) getBatteryLevel;
+
+- (BOOL) call: (NSString *) num;
+
+- (BOOL) sms: (id) obj;
 
 @end

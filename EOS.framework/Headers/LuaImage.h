@@ -32,6 +32,7 @@
 - (NSData *) getJPEGData: (float) compress;
 - (PackedArray *) getSize;
 - (LuaImage *) scale: (int) width : (int) height;
+- (LuaImage *) crop: (int) x : (int) y : (int) width : (int) height;
 - (LuaImage *) mask: (LuaImage *) mask;
 
 - (BOOL) save: (NSString *) path : (NSString *) format;
