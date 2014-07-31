@@ -28,6 +28,8 @@ self.stableModel.key = self.model.key;\
 dest;\
 }\
 
+//NSLog(@"%s %@ => %@", #key, self.stableModel.key, self.model.key);\
+
 #define APPLY_DIRTY_MODEL_PROP_EQ_DO(key, dest) \
 if (self.stableModel.key != self.model.key) {\
 self.stableModel.key = self.model.key;\
