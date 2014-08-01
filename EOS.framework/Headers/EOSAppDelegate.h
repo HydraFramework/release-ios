@@ -30,9 +30,6 @@
     UILabel *busyLabel;
     
     NSInteger busyCount;
-    
-@public
-    dispatch_queue_t background_imagecache_queue;
 }
 
 @property (strong, nonatomic) UIWindow *window;
