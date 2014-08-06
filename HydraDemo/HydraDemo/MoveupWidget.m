@@ -35,6 +35,7 @@
                                  [_header innerView].transform = CGAffineTransformIdentity;
                              }
                          }
+                         panStartIndex = index;
                      }];
     
     [OSUtils executeDirect: self.model.onchange withSandbox: self.pageSandbox withObject: self withObject: [NSNumber numberWithInt: index]];
