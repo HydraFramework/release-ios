@@ -26,6 +26,8 @@
 		225EB5BE196BDF2A00ABB668 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225EB5A6196BDF2A00ABB668 /* UIKit.framework */; };
 		225EB5C6196BDF2A00ABB668 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 225EB5C4196BDF2A00ABB668 /* InfoPlist.strings */; };
 		225EB5C8196BDF2A00ABB668 /* HydraDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225EB5C7196BDF2A00ABB668 /* HydraDemoTests.m */; };
+		22708E8D19920F1000EFF39A /* MoveupWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 22708E8C19920F1000EFF39A /* MoveupWidget.m */; };
+		22708E9019920F9000EFF39A /* MoveupM.m in Sources */ = {isa = PBXBuildFile; fileRef = 22708E8F19920F9000EFF39A /* MoveupM.m */; };
 		F47E7561C479475D8EADC20B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51A3CE2B3F413484392EFD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		225EB5C3196BDF2A00ABB668 /* HydraDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HydraDemoTests-Info.plist"; sourceTree = "<group>"; };
 		225EB5C5196BDF2A00ABB668 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		225EB5C7196BDF2A00ABB668 /* HydraDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraDemoTests.m; sourceTree = "<group>"; };
+		22708E8B19920F1000EFF39A /* MoveupWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveupWidget.h; sourceTree = "<group>"; };
+		22708E8C19920F1000EFF39A /* MoveupWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveupWidget.m; sourceTree = "<group>"; };
+		22708E8E19920F9000EFF39A /* MoveupM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveupM.h; sourceTree = "<group>"; };
+		22708E8F19920F9000EFF39A /* MoveupM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveupM.m; sourceTree = "<group>"; };
 		3D3FFF8170454EADB8880B69 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CE51A3CE2B3F413484392EFD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +151,10 @@
 			children = (
 				225EB5B1196BDF2A00ABB668 /* AppDelegate.h */,
 				225EB5B2196BDF2A00ABB668 /* AppDelegate.mm */,
+				22708E8B19920F1000EFF39A /* MoveupWidget.h */,
+				22708E8C19920F1000EFF39A /* MoveupWidget.m */,
+				22708E8E19920F9000EFF39A /* MoveupM.h */,
+				22708E8F19920F9000EFF39A /* MoveupM.m */,
 				225EB5B4196BDF2A00ABB668 /* Images.xcassets */,
 				225EB5A9196BDF2A00ABB668 /* Supporting Files */,
 			);
@@ -317,7 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				225EB5B3196BDF2A00ABB668 /* AppDelegate.mm in Sources */,
+				22708E9019920F9000EFF39A /* MoveupM.m in Sources */,
 				225EB5AF196BDF2A00ABB668 /* main.m in Sources */,
+				22708E8D19920F1000EFF39A /* MoveupWidget.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

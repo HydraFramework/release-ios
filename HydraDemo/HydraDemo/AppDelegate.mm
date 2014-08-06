@@ -30,6 +30,7 @@
     // [[ESRegistry getInstance] registerService: @"MyService" withName: @"myservice"];
     // [WidgetMap bind: @"widgetname" withModelClassName: @"WidgetModel" withWidgetClassName: @"WidgetClassName"];
     // [ControllerMap bind:@"controllername" withClass:@"ControllerClassName"];
+    [WidgetMap bind: @"moveup" withModelClassName: @"MoveupM" withWidgetClassName: @"MoveupWidget"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor blackColor];
