@@ -12,11 +12,12 @@
 #import "RootViewController.h"
 #import "IAppManagementService.h"
 #import "ESRegistry.h"
+#import "GlobalSandboxDelegate.h"
 
 @class AppParam;
 @class ViewWidget;
 
-@interface EOSAppDelegate : UIResponder <UIApplicationDelegate>{
+@interface EOSAppDelegate : UIResponder <UIApplicationDelegate, GlobalSandboxDelegate>{
     GlobalSandbox *globalSandbox;
     RootViewController *rootViewController;
     RootNavViewController *rootNavViewController;

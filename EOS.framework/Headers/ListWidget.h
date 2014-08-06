@@ -24,8 +24,13 @@
 
 @end
 
+@protocol ListWidgetDelegate <NSObject>
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
+@end
+
 @interface ListWidget : AbstractUIWidget <UITableViewDataSource, UITableViewDelegate, IListWidget> {
-    UITableView *listView;
     NSMutableArray *sectionList;
     NSMutableArray *sectionIndexTitles;
     NSMutableDictionary *sectionHeaderWidgetMap;
@@ -38,6 +43,10 @@
 
 @property (nonatomic, readonly) ListM *model;
 @property (nonatomic, readonly) ListM *stableModel;
+
+@property (nonatomic, readonly) UITableView *listView;
+
+@property (nonatomic, assign) id<ListWidgetDelegate> delegate;
 
 - (void) setDataProvider: (id) data;
 

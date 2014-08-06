@@ -13,6 +13,7 @@
 #import "LuaObjectProxyCompatible.h"
 #import "LuaObjectProxy.h"
 #import "LuaState.h"
+#import "GlobalSandboxDelegate.h"
 
 @class AppSandbox;
 @class LuaHelper;
@@ -39,6 +40,8 @@
 @property (nonatomic, readonly) BOOL EOS_DEBUGGER_BOOL;
 @property (nonatomic, assign) BOOL screenAutoRotation;
 @property (nonatomic, assign) BOOL statusBarHidden;
+
+@property (nonatomic, assign) id<GlobalSandboxDelegate> delegate;
 
 - (NSString *) getSecureCode;
 

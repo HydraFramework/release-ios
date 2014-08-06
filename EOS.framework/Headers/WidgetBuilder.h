@@ -10,7 +10,6 @@
 #import "UIWidgetM.h"
 #import "ViewWidget.h"
 #import "PageM.h"
-#import "PageController.h"
 
 /** Widget Builder
  

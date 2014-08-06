@@ -42,7 +42,6 @@ self.stableModel.key = self.model.key;\
 dest;\
 }\
 
-@class PageController;
 @class ViewWidget;
 
 /**This class is the base class of all Widget*/
@@ -75,7 +74,6 @@ dest;\
 /**The Model with this `Widget`*/
 @property (nonatomic, readonly) UIWidgetM *model; //dirtyModel
 @property (nonatomic, readonly) UIWidgetM *stableModel;
-@property (nonatomic, readonly) PageController *pageController;
 @property (nonatomic, assign) PageSandbox *pageSandbox;
 
 @property (nonatomic, assign) ViewWidget *parent;
