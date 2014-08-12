@@ -20,6 +20,7 @@
     CGPoint panStartPoint;
     NSInteger index;
     NSInteger panStartIndex;
+    CGAffineTransform lastHeaderTransform;
 }
 
 @property (nonatomic, readonly) MoveupM *model;

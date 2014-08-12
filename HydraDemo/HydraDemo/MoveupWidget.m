@@ -20,6 +20,8 @@
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget: self action: @selector(onPan:)];
     [[self innerView] addGestureRecognizer: pan];
+    
+    lastHeaderTransform = CGAffineTransformIdentity;
 }
 
 - (void) reloadIndex{
@@ -32,7 +34,7 @@
                              if (index > 0) {
                                  [_header innerView].transform = CGAffineTransformMakeTranslation(0, self.model.headerKeep - self.model.headerHeight);
                              } else {
-                                 [_header innerView].transform = CGAffineTransformIdentity;
+                                 [_header innerView].transform = lastHeaderTransform;
                              }
                          }
                          panStartIndex = index;
@@ -85,6 +87,7 @@
     
     CGAffineTransform transform = CGAffineTransformMakeTranslation(0, ty - self.model.headerHeight);
     [_header innerView].transform = transform;
+    lastHeaderTransform = transform;
 }
 
 -(NSUInteger)createView{
@@ -123,8 +126,6 @@
 
 -(void)reloadRect {
     [super reloadRect];
-    
-
 
     for (int i = 0; i < [subitems count]; i++) {
         ListWidget *widget = [subitems objectAtIndex: i];
