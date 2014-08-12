@@ -17,5 +17,6 @@ typedef NSString* EventKey;
 #define EventKeyPushNotification    @"PushNotification"
 #define EventKeyOnBackground        @"OnBackground"
 #define EventKeyOnForeground        @"OnForeground"
+#define EventKeyKeyBoardRectChanged @"EventKeyKeyBoardRectChanged"
 
 #endif
