@@ -17,8 +17,6 @@
     CGPoint currentContentOffset;
     
     CGRect originalRect;
-    
-    BOOL resizedForKeyboard;
 }
 
 @property (nonatomic, readonly) ScrollViewM *model;

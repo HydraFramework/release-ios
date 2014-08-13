@@ -13,7 +13,7 @@
 #import "PagePanel.h"
 #import "ViewWidget.h"
 
-@interface PageController : UIViewController <PagePanel, MFMessageComposeViewControllerDelegate>{
+@interface PageController : UIViewController <PagePanel, MFMessageComposeViewControllerDelegate, UIGestureRecognizerDelegate>{
     NSURL *pageURL;
     PageSandbox *pageSandbox;
     

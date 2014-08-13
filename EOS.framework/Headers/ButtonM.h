@@ -21,7 +21,10 @@
 @property (nonatomic, assign) float fontSize;
 @property (nonatomic, assign) BOOL bold;
 @property (nonatomic, assign) BOOL underline;
-@property (nonatomic, assign) BOOL showsTouchWhenHighlighted;
 @property (nonatomic, assign) BOOL showsTouch;
+
+//ios spec
+@property (nonatomic, assign) BOOL exclusiveTouch;
+@property (nonatomic, assign) BOOL showsTouchWhenHighlighted;
 
 @end
