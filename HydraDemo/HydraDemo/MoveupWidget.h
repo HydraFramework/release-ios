@@ -19,8 +19,8 @@
 @interface MoveupWidget : ViewWidget <ListWidgetDelegate, IMoveupWidget>{
     CGPoint panStartPoint;
     NSInteger index;
-    NSInteger panStartIndex;
-    CGAffineTransform lastHeaderTransform;
+//    NSInteger panStartIndex;
+    CGRect lastHeaderRect;
 }
 
 @property (nonatomic, readonly) MoveupM *model;

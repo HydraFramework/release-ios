@@ -20,27 +20,29 @@
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget: self action: @selector(onPan:)];
     [[self innerView] addGestureRecognizer: pan];
-    
-    lastHeaderTransform = CGAffineTransformIdentity;
 }
 
 - (void) reloadIndex{
     [UIView animateWithDuration: 0.2
                      animations:^{
-                         for (ListWidget *widget in subitems) {
-                             [widget innerView].transform = CGAffineTransformMakeTranslation(-[_header innerView].frame.size.width * index, 0);
+                         for (int i = 0; i < [subitems count]; i++) {
+                             ListWidget *widget = [subitems objectAtIndex: i];
+                             CGRect rect = CGRectMake((i - index) * currentRect.size.width, 0, currentRect.size.width, currentRect.size.height);
+                             widget->currentRect = rect;
+                             [widget reloadRect];
                          }
-                         if (index != panStartIndex) {
-                             if (index > 0) {
-                                 [_header innerView].transform = CGAffineTransformMakeTranslation(0, self.model.headerKeep - self.model.headerHeight);
-                             } else {
-                                 [_header innerView].transform = lastHeaderTransform;
-                             }
+                         if (index > 0) {
+                             _header->currentRect.origin = CGPointMake(0, self.model.headerKeep - self.model.headerHeight);
+                             [_header reloadRect];
+                         } else {
+                             _header->currentRect = lastHeaderRect;
+                             [_header reloadRect];
                          }
-                         panStartIndex = index;
+                     }
+                     completion:^(BOOL finished) {
+                         [OSUtils executeDirect: self.model.onchange withSandbox: self.pageSandbox withObject: self withObject: [NSNumber numberWithInt: index]];
                      }];
     
-    [OSUtils executeDirect: self.model.onchange withSandbox: self.pageSandbox withObject: self withObject: [NSNumber numberWithInt: index]];
 //    selectionView.frame = CGRectMake(selectionView.superview.frame.size.width / 4 * index, 0, selectionView.superview.frame.size.width/4, 40);
 }
 
@@ -49,12 +51,15 @@
     switch (gesture.state) {
         case UIGestureRecognizerStateBegan:
             panStartPoint = point;
-            panStartIndex = index;
+//            panStartIndex = index;
             break;
         case UIGestureRecognizerStateChanged:{
             CGFloat tx = -[_header innerView].frame.size.width * index + (point.x - panStartPoint.x);
-            for (ListWidget *widget in subitems) {
-                [widget innerView].transform = CGAffineTransformMakeTranslation(tx, 0);
+            for (int i = 0; i < [subitems count]; i++) {
+                ListWidget *widget = [subitems objectAtIndex: i];
+                CGRect rect = CGRectMake(i * currentRect.size.width + tx, 0, currentRect.size.width, currentRect.size.height);
+                widget->currentRect = rect;
+                [widget reloadRect];
             }
         }
             break;
@@ -85,12 +90,16 @@
     ty = ty < self.model.headerKeep ? self.model.headerKeep : ty;
     ty = ty > self.model.headerHeight ? self.model.headerHeight : ty;
     
-    CGAffineTransform transform = CGAffineTransformMakeTranslation(0, ty - self.model.headerHeight);
-    [_header innerView].transform = transform;
-    lastHeaderTransform = transform;
+    _header->currentRect.origin = CGPointMake(0, ty - self.model.headerHeight);
+    [_header reloadRect];
+    lastHeaderRect = _header->currentRect;
 }
 
 -(NSUInteger)createView{
+    if (created) {
+        return 0;
+    }
+    
     NSUInteger count = [super createView];
     
     if ([subitems count] > 0) {
@@ -106,10 +115,15 @@
     
     CGRect headerRect = [_header measureRect: CGSizeMake(currentRect.size.width, self.model.headerHeight)];
     _header->currentRect = headerRect;
+    lastHeaderRect = headerRect;
     [_header createView];
     [[self innerView] addSubview: [_header innerView]];
 
     return count;
+}
+
+-(CGRect)measureRect:(CGSize)parentContentSize {
+    return [super measureSelfRect: parentContentSize];
 }
 
 -(LuaObjectProxy *)luaObjectProxy{
@@ -127,22 +141,7 @@
 -(void)reloadRect {
     [super reloadRect];
 
-    for (int i = 0; i < [subitems count]; i++) {
-        ListWidget *widget = [subitems objectAtIndex: i];
-        [widget innerView].frame = CGRectMake(i * currentRect.size.width, 0, currentRect.size.width, currentRect.size.height);
-    }
-    
-    [_header reloadRect];
-}
-
--(void)setViewFrame:(CGRect)rect {
-    [super setViewFrame: rect];
-    
-    for (int i = 0; i < [subitems count]; i++) {
-        ListWidget *widget = [subitems objectAtIndex: i];
-        [widget innerView].frame = CGRectMake(i * currentRect.size.width, 0, currentRect.size.width, currentRect.size.height);
-    }
-    
+    [self reloadIndex];
 }
 
 @end
