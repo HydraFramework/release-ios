@@ -16,6 +16,7 @@
 - (void) onReady;
 - (void) onFronted;
 - (void) onIdle;
+- (void) onTap;
 //- (void) onDestroy DEPRECATED_ATTRIBUTE;
 
 - (BOOL) onNavBack;
