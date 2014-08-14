@@ -23,6 +23,8 @@
 }
 
 - (void) reloadIndex{
+    [OSUtils executeDirect: self.model.willchange withSandbox: self.pageSandbox withObject: self withObject: [NSNumber numberWithInt: index]];
+
     [UIView animateWithDuration: 0.2
                      animations:^{
                          for (int i = 0; i < [subitems count]; i++) {
@@ -42,7 +44,6 @@
                      completion:^(BOOL finished) {
                          [OSUtils executeDirect: self.model.onchange withSandbox: self.pageSandbox withObject: self withObject: [NSNumber numberWithInt: index]];
                      }];
-    
 //    selectionView.frame = CGRectMake(selectionView.superview.frame.size.width / 4 * index, 0, selectionView.superview.frame.size.width/4, 40);
 }
 

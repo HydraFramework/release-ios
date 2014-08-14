@@ -13,5 +13,6 @@
 @property (nonatomic, strong) UIWidgetM *header;
 @property (nonatomic, assign) NSInteger headerHeight;
 @property (nonatomic, assign) NSInteger headerKeep;
+@property (nonatomic, strong) LuaFunction* willchange;
 
 @end

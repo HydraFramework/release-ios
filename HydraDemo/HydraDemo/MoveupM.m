@@ -23,6 +23,9 @@
     if ([dic valueForKey: @"headerKeep"]) {
         self.headerKeep = [[dic valueForKey: @"headerKeep"] integerValue];
     }
+    if ([dic valueForKey: @"willchange"]) {
+        self.willchange = [dic valueForKey: @"willchange"];
+    }
 }
 
 - (id)copyWithZone:(NSZone *)zone{
@@ -30,6 +33,7 @@
     m.headerHeight = _headerHeight;
     m.header = [_header copy];
     m.headerKeep = _headerKeep;
+    m.willchange = _willchange;
     
     return m;
 }
