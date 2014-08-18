@@ -29,6 +29,8 @@
     BOOL scriptLoaded;
     
     NSTimeInterval lastOnFronted;
+    
+    BOOL tap_to_hide_keyboard;
 }
 
 @property (nonatomic, strong) PageM *model;

@@ -52,6 +52,8 @@ typedef enum {
 
 @property (nonatomic, strong) NSString *schema;
 
+@property (nonatomic, strong) NSArray *metadata;
+
 /**The Script section of this page
  
  Each item in this array contains plain script.
