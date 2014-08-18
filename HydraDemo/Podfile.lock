@@ -20,11 +20,11 @@ PODS:
     - DTFoundation/DTAnimatedGIF (~> 1.7.1)
     - DTFoundation/DTHTMLParser (~> 1.7.1)
     - DTFoundation/UIKit (~> 1.7.1)
-  - DTFoundation/Core (1.7.1)
-  - DTFoundation/DTAnimatedGIF (1.7.1)
-  - DTFoundation/DTHTMLParser (1.7.1):
+  - DTFoundation/Core (1.7.2)
+  - DTFoundation/DTAnimatedGIF (1.7.2)
+  - DTFoundation/DTHTMLParser (1.7.2):
     - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.1):
+  - DTFoundation/UIKit (1.7.2):
     - DTFoundation/Core
   - FMDB (2.3):
     - FMDB/standard
@@ -32,7 +32,7 @@ PODS:
   - FMDB/standard (2.3):
     - FMDB/common
   - GZIP (1.0.3)
-  - Hydra (3.0.0):
+  - Hydra (3.0.25):
     - ASIHTTPRequest (~> 1.8.2)
     - CocoaAsyncSocket (~> 7.3.5)
     - DTCoreText (~> 1.6.12)
@@ -45,7 +45,7 @@ PODS:
     - UIDevice-Hardware (~> 0.1.3)
     - ZBarSDK (~> 1.3.1)
     - ZipArchive (~> 1.2.0)
-  - lua51 (5.1.5)
+  - lua51 (1.0.1)
   - NSData+Base64 (1.0.0)
   - OpenSSL-Universal (1.0.1.h)
   - Reachability (3.1.1)
@@ -81,13 +81,13 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   curl: fe4dc2934a4052f7467de7ae475882d195e1550f
   DTCoreText: 84eb8ba2e70448fdd9d837540e371f9f587b65ba
-  DTFoundation: ef6fb95da64f202d1600bc23dde79c6fd74c0c2d
+  DTFoundation: 126729614911ae7dbab3dcc1c078f189943bee66
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  Hydra: cee483f96103a1decc6dbdcdce4a47aef359b638
-  lua51: a91b115281a86cfc17eb23deee1393ca73f0fa98
+  Hydra: 792ea626de2471f1ddef9543803d990274b6c57c
+  lua51: 2906c16f508bd35a8aeb0ccff98aaf30306af9b0
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
-  OpenSSL-Universal: c109d62ff4632cfa306e98d2159365266b3f44c3
+  OpenSSL-Universal: 9c112508615ed33bb35f730eed820e93175a9dec
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   sqlcipher: e68cf2a41d700fca574ead741351c9ac6124d7fb
   TouchJSON: b40940e40e53bb9b1ad60c63e01ed83bff93d53e
