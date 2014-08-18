@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Hydra"
-  s.version      = "3.0.24"
+  s.version      = "3.0.25"
   s.summary      = "Hydra release."
   s.description  = <<-DESC
                    Hydra release.
@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "samchang" => "sam.chang@me.com" }
   s.platform     = :ios, "5.1.1"
-  s.source       = { :git => "https://github.com/HydraFramework/release-ios.git", :tag => "v3.0.24" }
+  s.source       = { :git => "https://github.com/HydraFramework/release-ios.git", :tag => "v3.0.25" }
+  s.resource = 'builtin'
   s.ios.vendored_frameworks = 'EOS.framework'
 
-  s.resources  'builtin/*'
   s.dependency 'DTCoreText', '~> 1.6.12'
   s.dependency 'TouchJSON', '~> 1.1'
   s.dependency 'ASIHTTPRequest', '~> 1.8.2'
