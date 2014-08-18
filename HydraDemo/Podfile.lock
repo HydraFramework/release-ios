@@ -32,7 +32,7 @@ PODS:
   - FMDB/standard (2.3):
     - FMDB/common
   - GZIP (1.0.3)
-  - lua51 (5.1.5)
+  - lua51 (1.0.1)
   - NSData+Base64 (1.0.0)
   - OpenSSL-Universal (1.0.1.h)
   - Reachability (3.1.1)
@@ -80,7 +80,7 @@ SPEC CHECKSUMS:
   DTFoundation: 126729614911ae7dbab3dcc1c078f189943bee66
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  lua51: a91b115281a86cfc17eb23deee1393ca73f0fa98
+  lua51: 2906c16f508bd35a8aeb0ccff98aaf30306af9b0
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
   OpenSSL-Universal: 9c112508615ed33bb35f730eed820e93175a9dec
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
