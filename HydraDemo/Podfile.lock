@@ -1,4 +1,5 @@
 PODS:
+  - AnimatedGIFImageSerialization (0.2.0)
   - ASIHTTPRequest (1.8.2):
     - ASIHTTPRequest/ASIWebPageRequest
     - ASIHTTPRequest/CloudFiles
@@ -44,6 +45,7 @@ PODS:
   - ZipArchive (1.2.0)
 
 DEPENDENCIES:
+  - AnimatedGIFImageSerialization (~> 0.2.0)
   - ASIHTTPRequest (~> 1.8.2)
   - Box2D (from `https://github.com/HydraFramework/HydraDependencyBox2D.git`)
   - CocoaAsyncSocket (~> 7.3.5)
@@ -72,6 +74,7 @@ EXTERNAL SOURCES:
     :git: https://github.com/HydraFramework/HydraDependencySqlCipher.git
 
 SPEC CHECKSUMS:
+  AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
   ASIHTTPRequest: 2c8335b49410c0e2ad42829c438e74d454b77590
   Box2D: 45fb6e364d33da32f7ed49b42fccc79d0c874eec
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
