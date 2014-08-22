@@ -15,4 +15,7 @@
 
 - (void) eval: (NSString *) script;
 
+- (NSString *) _LUA_resolveFile: (NSString *) path;
+
+
 @end
