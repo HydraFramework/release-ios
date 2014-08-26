@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.1.1"
   s.source       = { :git => "https://github.com/HydraFramework/release-ios.git", :tag => "v3.0.34" }
   s.resource = 'builtin'
+  s.frameworks   = 'AssetsLibrary', 'MessageUI', 'AddressBookUI', 'AddressBook', 'Accelerate', 'MapKit', 'AudioToolbox', 'CoreTelephony', 'QuickLook', 'Social', 'CoreLocation'
+  s.libraries = 'resolv'
   s.ios.vendored_frameworks = 'EOS.framework'
 
   s.dependency 'DTCoreText', '~> 1.6.12'
