@@ -28,6 +28,7 @@
 		225EB5C8196BDF2A00ABB668 /* HydraDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225EB5C7196BDF2A00ABB668 /* HydraDemoTests.m */; };
 		22708E8D19920F1000EFF39A /* MoveupWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 22708E8C19920F1000EFF39A /* MoveupWidget.m */; };
 		22708E9019920F9000EFF39A /* MoveupM.m in Sources */ = {isa = PBXBuildFile; fileRef = 22708E8F19920F9000EFF39A /* MoveupM.m */; };
+		22D57EFB19AC73A300B112AD /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D57EFA19AC73A300B112AD /* libresolv.dylib */; };
 		F47E7561C479475D8EADC20B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51A3CE2B3F413484392EFD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		22708E8C19920F1000EFF39A /* MoveupWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveupWidget.m; sourceTree = "<group>"; };
 		22708E8E19920F9000EFF39A /* MoveupM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveupM.h; sourceTree = "<group>"; };
 		22708E8F19920F9000EFF39A /* MoveupM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveupM.m; sourceTree = "<group>"; };
+		22D57EFA19AC73A300B112AD /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		3D3FFF8170454EADB8880B69 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CE51A3CE2B3F413484392EFD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D57EFB19AC73A300B112AD /* libresolv.dylib in Frameworks */,
 				2239AB6A196D0162007EA79A /* libEOSStatic.a in Frameworks */,
 				225EB5A5196BDF2A00ABB668 /* CoreGraphics.framework in Frameworks */,
 				225EB5A7196BDF2A00ABB668 /* UIKit.framework in Frameworks */,
@@ -136,6 +139,7 @@
 		225EB5A1196BDF2A00ABB668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22D57EFA19AC73A300B112AD /* libresolv.dylib */,
 				2239AB69196D0162007EA79A /* libEOSStatic.a */,
 				225EB5A2196BDF2A00ABB668 /* Foundation.framework */,
 				225EB5A4196BDF2A00ABB668 /* CoreGraphics.framework */,
@@ -461,6 +465,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HydraDemo/HydraDemo-Prefix.pch";
 				INFOPLIST_FILE = "HydraDemo/HydraDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,6 +481,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HydraDemo/HydraDemo-Prefix.pch";
 				INFOPLIST_FILE = "HydraDemo/HydraDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -15,7 +15,6 @@ PODS:
     - ASIHTTPRequest/Core
   - Box2D (0.0.2)
   - CocoaAsyncSocket (7.3.5)
-  - curl (0.0.1)
   - DTCoreText (1.6.13):
     - DTFoundation/Core (~> 1.7.1)
     - DTFoundation/DTAnimatedGIF (~> 1.7.1)
@@ -27,18 +26,16 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.2):
     - DTFoundation/Core
+  - event-ssl-curl (0.0.1)
   - FMDB (2.3):
     - FMDB/standard
   - FMDB/common (2.3)
   - FMDB/standard (2.3):
     - FMDB/common
   - GZIP (1.0.3)
-  - lua51 (1.0.1)
+  - lua51 (1.0.2)
   - NSData+Base64 (1.0.0)
-  - OpenSSL-Universal (1.0.1.h)
   - Reachability (3.1.1)
-  - sqlcipher (1.0.1):
-    - OpenSSL-Universal (~> 1.0.1.h)
   - TouchJSON (1.1)
   - UIDevice-Hardware (0.1.3)
   - ZBarSDK (1.3.1)
@@ -49,15 +46,13 @@ DEPENDENCIES:
   - ASIHTTPRequest (~> 1.8.2)
   - Box2D (from `https://github.com/HydraFramework/HydraDependencyBox2D.git`)
   - CocoaAsyncSocket (~> 7.3.5)
-  - curl (from `https://github.com/HydraFramework/HydraDependencyCURL.git`)
   - DTCoreText (~> 1.6.12)
+  - event-ssl-curl (from `https://github.com/HydraFramework/libevent-openssl-tor-libcurl.git`)
   - FMDB (~> 2.3)
   - GZIP (~> 1.0.2)
   - lua51 (from `https://github.com/HydraFramework/lua51.git`)
   - NSData+Base64 (~> 1.0.0)
-  - OpenSSL-Universal (~> 1.0.1.h)
   - Reachability (~> 3.1.1)
-  - sqlcipher (from `https://github.com/HydraFramework/HydraDependencySqlCipher.git`)
   - TouchJSON (~> 1.1)
   - UIDevice-Hardware (~> 0.1.3)
   - ZBarSDK (~> 1.3.1)
@@ -66,28 +61,24 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   Box2D:
     :git: https://github.com/HydraFramework/HydraDependencyBox2D.git
-  curl:
-    :git: https://github.com/HydraFramework/HydraDependencyCURL.git
+  event-ssl-curl:
+    :git: https://github.com/HydraFramework/libevent-openssl-tor-libcurl.git
   lua51:
     :git: https://github.com/HydraFramework/lua51.git
-  sqlcipher:
-    :git: https://github.com/HydraFramework/HydraDependencySqlCipher.git
 
 SPEC CHECKSUMS:
   AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
   ASIHTTPRequest: 2c8335b49410c0e2ad42829c438e74d454b77590
   Box2D: 45fb6e364d33da32f7ed49b42fccc79d0c874eec
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
-  curl: fe4dc2934a4052f7467de7ae475882d195e1550f
   DTCoreText: 84eb8ba2e70448fdd9d837540e371f9f587b65ba
   DTFoundation: 126729614911ae7dbab3dcc1c078f189943bee66
+  event-ssl-curl: 2eef0fbe6732b4e010a2475576f431bb3b3f97b1
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  lua51: 2906c16f508bd35a8aeb0ccff98aaf30306af9b0
+  lua51: ac98b3167d1d6814c75c810238158a09afe3cc6b
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
-  OpenSSL-Universal: 9c112508615ed33bb35f730eed820e93175a9dec
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
-  sqlcipher: e68cf2a41d700fca574ead741351c9ac6124d7fb
   TouchJSON: b40940e40e53bb9b1ad60c63e01ed83bff93d53e
   UIDevice-Hardware: b1c37dbeee3a5279ac15fbba070b8de556496b67
   ZBarSDK: 3ed560856963f765b66d834f464590bd6ba13b44
