@@ -23,6 +23,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [GlobalSandbox sandbox].screenAutoRotation = YES;
+    
     [UIApplication sharedApplication].statusBarHidden = NO;
     BOOL ret = [super application: application didFinishLaunchingWithOptions: launchOptions];
     
