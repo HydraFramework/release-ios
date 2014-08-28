@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.dependency 'TouchJSON', '~> 1.1'
   s.dependency 'ASIHTTPRequest', '~> 1.8.2'
   s.dependency 'CocoaAsyncSocket', '~> 7.3.5'
-  s.dependency 'FMDB', '~> 2.3'
+  s.dependency 'FMDB/common', '~> 2.3'
   s.dependency 'Reachability', '~> 3.1.1'
   s.dependency 'ZipArchive', '~> 1.2.0'
   s.dependency 'UIDevice-Hardware', '~> 0.1.3'
