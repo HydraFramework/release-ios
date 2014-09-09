@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Hydra"
-  s.version      = "3.0.40"
+  s.version      = "3.0.41"
   s.summary      = "Hydra release."
   s.description  = <<-DESC
                    Hydra release.
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "samchang" => "sam.chang@me.com" }
   s.platform     = :ios, "5.1.1"
-  s.source       = { :git => "https://github.com/HydraFramework/release-ios.git", :tag => "v3.0.40" }
+  s.source       = { :git => "https://github.com/HydraFramework/release-ios.git", :tag => "v3.0.41" }
   s.resource = 'builtin'
   s.frameworks   = 'AssetsLibrary', 'MessageUI', 'AddressBookUI', 'AddressBook', 'Accelerate', 'MapKit', 'AudioToolbox', 'CoreTelephony', 'QuickLook', 'Social', 'CoreLocation'
   s.libraries = 'resolv'
