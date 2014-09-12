@@ -18,7 +18,7 @@
 
 #define APP_EVENT_ON_LOADED @"ON_LOADED"
 
-//#define DEBUG_EOS
+#define DEBUG_EOS
 
 //#define ENABLE_OPENCV
 //#define USING_PRIVATE_FRAMEWORK
