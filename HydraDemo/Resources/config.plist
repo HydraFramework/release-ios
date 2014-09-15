@@ -36,7 +36,7 @@
 	<key>PreProd</key>
 	<dict>
 		<key>AppVersion</key>
-		<string>1.0.0</string>
+		<string>2.5.0</string>
 		<key>AppName</key>
 		<string>com.marykay.us.demo</string>
 		<key>ServerAddress</key>
