@@ -1,8 +1,13 @@
-platform :ios, '5.1.1'
+platform :ios, '6.0.0'
 
-pod 'lua51',:git=>"https://github.com/HydraFramework/lua51.git"
-pod 'curl',:git=>"https://github.com/HydraFramework/HydraDependencyCURL.git"
-pod 'Box2D',:git=>"https://github.com/HydraFramework/HydraDependencyBox2D.git"
-pod 'sqlcipher',:git=>"https://github.com/HydraFramework/HydraDependencySqlCipher.git"
+# #run on new env guides.
+# pod repo remove master
+# pod repo add master http://git.luafan.com/Specs.git
+# pod install
+# #search project, add static before base64_encode, "unsigned static base64_encode"
 
-pod 'Hydra',:git=>"https://github.com/HydraFramework/release-ios.git"
+pod 'lua51',:git=>"http://git.luafan.com/lua51.git"
+pod 'Box2D',:git=>"http://git.luafan.com/HydraDependencyBox2D.git"
+pod 'event-ssl-curl',:git=>"http://git.luafan.com/libevent-openssl-tor-libcurl.git"
+
+pod 'Hydra',:git=>"http://git.luafan.com/release-ios.git"
