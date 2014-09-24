@@ -19,7 +19,8 @@ pod 'ZBarSDK', '~> 1.3.1'
 pod 'GZIP', '~> 1.0.2'
 pod 'AnimatedGIFImageSerialization', '~> 0.2.0'
 
-pod 'lua51',:git=>"http://git.luafan.com/lua51.git"
+#pod 'lua51',:git=>"http://git.luafan.com/lua51.git"
+pod 'lua52',:git=>"https://github.com/HydraFramework/lua52.git"
 pod 'Box2D',:git=>"http://git.luafan.com/HydraDependencyBox2D.git"
 pod 'event-ssl-curl',:git=>"http://git.luafan.com/libevent-openssl-tor-libcurl.git"
 

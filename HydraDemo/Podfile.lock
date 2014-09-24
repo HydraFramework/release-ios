@@ -29,7 +29,7 @@ PODS:
   - event-ssl-curl (0.0.1)
   - FMDB/common (2.3)
   - GZIP (1.0.3)
-  - lua51 (1.0.2)
+  - lua52 (0.0.1)
   - NSData+Base64 (1.0.0)
   - Reachability (3.1.1)
   - TouchJSON (1.1)
@@ -46,7 +46,7 @@ DEPENDENCIES:
   - event-ssl-curl (from `http://git.luafan.com/libevent-openssl-tor-libcurl.git`)
   - FMDB/common (~> 2.3)
   - GZIP (~> 1.0.2)
-  - lua51 (from `http://git.luafan.com/lua51.git`)
+  - lua52 (from `https://github.com/HydraFramework/lua52.git`)
   - NSData+Base64 (~> 1.0.0)
   - Reachability (~> 3.1.1)
   - TouchJSON (~> 1.1)
@@ -59,8 +59,8 @@ EXTERNAL SOURCES:
     :git: http://git.luafan.com/HydraDependencyBox2D.git
   event-ssl-curl:
     :git: http://git.luafan.com/libevent-openssl-tor-libcurl.git
-  lua51:
-    :git: http://git.luafan.com/lua51.git
+  lua52:
+    :git: https://github.com/HydraFramework/lua52.git
 
 SPEC CHECKSUMS:
   AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
@@ -72,7 +72,7 @@ SPEC CHECKSUMS:
   event-ssl-curl: 2eef0fbe6732b4e010a2475576f431bb3b3f97b1
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  lua51: ac98b3167d1d6814c75c810238158a09afe3cc6b
+  lua52: 651ac5b37e015dd865ea7e01eea6a902f5d265ef
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   TouchJSON: b40940e40e53bb9b1ad60c63e01ed83bff93d53e
