@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Hydra"
-  s.version      = "3.0.42"
+  s.version      = "3.1.0"
   s.summary      = "Hydra release."
   s.description  = <<-DESC
                    Hydra release.
@@ -8,12 +8,21 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/HydraFramework/release-ios"
   s.license      = "MIT"
   s.author       = { "samchang" => "sam.chang@me.com" }
-  s.platform     = :ios, "5.1.1"
-  s.source       = { :git => "https://github.com/HydraFramework/release-ios.git", :tag => "v3.0.42" }
+  s.platform     = :ios, "6.0.0"
+  s.source       = { :git => "https://github.com/HydraFramework/release-ios.git", :tag => "v3.1.0" }
   s.resource = 'builtin'
   s.frameworks   = 'AssetsLibrary', 'MessageUI', 'AddressBookUI', 'AddressBook', 'Accelerate', 'MapKit', 'AudioToolbox', 'CoreTelephony', 'QuickLook', 'Social', 'CoreLocation'
   s.libraries = 'resolv'
-  s.ios.vendored_frameworks = 'EOS.framework'
+
+  s.default_subspec = 'release'
+
+  s.subspec 'release' do |ss|
+    ss.ios.vendored_frameworks = 'Release/EOS.framework'
+  end
+
+  s.subspec 'debug' do |ss|
+    ss.ios.vendored_frameworks = 'Debug/EOS.framework'
+  end
 
   s.dependency 'DTCoreText', '~> 1.6.12'
   s.dependency 'TouchJSON', '~> 1.1'

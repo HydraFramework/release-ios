@@ -1,0 +1,52 @@
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#define MOBILET_MANIFEST @"manifest.json"
+
+#define PAGE_EVENT_ON_CREATED @"ON_CREATED"
+#define PAGE_EVENT_ON_DESTROY @"ON_DESTROY"
+#define PAGE_EVENT_ON_ACTIVATED @"ON_ACTIVATED"
+#define PAGE_EVENT_ON_DEACTIVATED @"ON_DEACTIVATED"
+
+#define APP_EVENT_ON_LOADED @"ON_LOADED"
+
+#ifdef DEBUG
+#define DEBUG_EOS
+#endif
+
+//#define ENABLE_OPENCV
+//#define USING_PRIVATE_FRAMEWORK
+
+//#define DEPREATE_UDID
+
+#ifdef DEBUG_EOS
+#define EOS_DEBUG(x) if([GlobalSandbox sandbox].EOS_DEBUG_BOOL)x()
+#define EOS_DEBUGGER(x) if([GlobalSandbox sandbox].EOS_DEBUGGER_BOOL)x()
+#define EOS_RELEASE(x) ((void)0)
+#else
+#define EOS_DEBUG(x) ((void)0)
+#define EOS_DEBUGGER(x) ((void)0)
+#define EOS_RELEASE(x) x()
+#endif
+
+#define IOSx_to_IOS7_VIEWCONTROLLER(x) \
+if ([x respondsToSelector: @selector(setEdgesForExtendedLayout:)]) { \
+x.edgesForExtendedLayout = UIRectEdgeNone; \
+x.extendedLayoutIncludesOpaqueBars = NO; \
+}
+
+#define IOSx_to_IOS7_VIEWCONTROLLER_FUNC \
+- (UIStatusBarStyle)preferredStatusBarStyle \
+{ \
+return UIStatusBarStyleDefault; \
+} \
+\
+- (BOOL)prefersStatusBarHidden \
+{ \
+return NO; \
+}
+
