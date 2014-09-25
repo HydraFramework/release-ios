@@ -12,7 +12,7 @@
 #import "ILuaReference.h"
 
 @class LuaState;
-@interface LuaRef : NSObject <LuaTableCompatible>{
+@interface LuaRef : NSObject{
     int ref;
     lua_State *L;
 }

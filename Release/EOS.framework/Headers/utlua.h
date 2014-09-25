@@ -13,6 +13,6 @@
 
 lua_State* utlua_open_state();
 lua_State* utlua_newthread(lua_State *L);
-int utlua_resume(lua_State *co, int count);
+int utlua_resume(lua_State *co, lua_State *from, int count);
 
 #endif

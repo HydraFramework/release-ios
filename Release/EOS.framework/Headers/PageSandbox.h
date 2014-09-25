@@ -28,7 +28,10 @@
 }
 
 @property (nonatomic, assign) UIViewController<PagePanel> *pageController;
+
+@property (nonatomic, readonly) int envRef;
 @property (nonatomic, readonly) LuaState *state;
+
 @property (nonatomic, strong) PageM *model;
 @property (nonatomic, readonly) id<PageLifecycle> lifecycle;
 @property (nonatomic, readonly) NSString *pageId;
@@ -36,7 +39,6 @@
 - (id) initWithAppSandbox: (AppSandbox *) sandbox withPageId: (NSString *) pid;
 
 - (void) runLuaBuffer: (NSString *) buffer;
-- (void) pushGlobalObject:(id)object withName:(const NSObject*)name;
 
 - (NSURL *) resolveFile: (NSString *) path;
 

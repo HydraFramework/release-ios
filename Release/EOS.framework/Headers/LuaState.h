@@ -17,17 +17,19 @@
 
 @class DefaultSandbox;
 
-@interface LuaState : LuaRef {
-    @public
-    DefaultSandbox *sandbox;
-}
+@interface LuaState : LuaRef
 
 - (lua_State*) state;
 
-- (void) runBuffer: (NSString*)buf;
-- (void) runData: (NSData*)buf;
-- (void) runFileAtPath:(NSString*)filePath;
-- (void) pushGlobalObject:(id)object withName:(const NSObject*) key;
+//- (void) runBuffer: (NSString*)buf;
+//- (void) runData: (NSData*)buf;
+//- (void) runFileAtPath:(NSString*)filePath;
+
+- (void) runBuffer: (NSString*)buf withEnv: (int) ref;
+- (void) runData: (NSData*)buf withEnv: (int) ref;
+- (void) runFileAtPath:(NSString*)filePath withEnv: (int) ref;
+
+//- (void) pushGlobalObject:(id)object withName:(const NSObject*) key;
 - (void) pushRegistyObject:(id)object withName:(const NSString*) key;
 - (void) gc;
 

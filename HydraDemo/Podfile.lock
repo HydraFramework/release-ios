@@ -29,7 +29,7 @@ PODS:
   - event-ssl-curl (0.0.1)
   - FMDB/common (2.3)
   - GZIP (1.0.3)
-  - Hydra (3.0.42):
+  - Hydra/debug (3.1.0):
     - AnimatedGIFImageSerialization (~> 0.2.0)
     - ASIHTTPRequest (~> 1.8.2)
     - CocoaAsyncSocket (~> 7.3.5)
@@ -42,7 +42,7 @@ PODS:
     - UIDevice-Hardware (~> 0.1.3)
     - ZBarSDK (~> 1.3.1)
     - ZipArchive (~> 1.2.0)
-  - lua51 (1.0.2)
+  - lua52 (0.0.1)
   - NSData+Base64 (1.0.0)
   - Reachability (3.1.1)
   - TouchJSON (1.1)
@@ -53,8 +53,8 @@ PODS:
 DEPENDENCIES:
   - Box2D (from `http://git.luafan.com/HydraDependencyBox2D.git`)
   - event-ssl-curl (from `http://git.luafan.com/libevent-openssl-tor-libcurl.git`)
-  - Hydra (from `http://git.luafan.com/release-ios.git`)
-  - lua51 (from `http://git.luafan.com/lua51.git`)
+  - Hydra/debug (from `http://git.luafan.com/release-ios.git`)
+  - lua52 (from `http://git.luafan.com/lua52.git`)
 
 EXTERNAL SOURCES:
   Box2D:
@@ -63,8 +63,8 @@ EXTERNAL SOURCES:
     :git: http://git.luafan.com/libevent-openssl-tor-libcurl.git
   Hydra:
     :git: http://git.luafan.com/release-ios.git
-  lua51:
-    :git: http://git.luafan.com/lua51.git
+  lua52:
+    :git: http://git.luafan.com/lua52.git
 
 SPEC CHECKSUMS:
   AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
@@ -76,8 +76,8 @@ SPEC CHECKSUMS:
   event-ssl-curl: 2eef0fbe6732b4e010a2475576f431bb3b3f97b1
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  Hydra: 2cd61f4ce71e7653265efa082d624cca70afc395
-  lua51: ac98b3167d1d6814c75c810238158a09afe3cc6b
+  Hydra: a2afed863629dcb7abbbaf6f3bc21c9dc523e574
+  lua52: 5a1a4de17de0040be4cd70e91057c0baad2d5b18
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   TouchJSON: b40940e40e53bb9b1ad60c63e01ed83bff93d53e

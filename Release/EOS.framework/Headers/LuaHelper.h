@@ -40,8 +40,8 @@
 - (void) presentModal: (NSDictionary *) dic;
 - (void) dismissModal;
 
-- (void) startBusy: (NSString *) ycenter withTitle: (NSString *) title;
-- (void) stopBusy;
+- (void) _COROUTINE_startBusy: (NSString *) ycenter withTitle: (NSString *) title;
+- (void) _COROUTINE_stopBusy;
 
 - (void) asyncPostRoute: (NSString *) route withValue: (NSString *) value withId: (NSString *) postId;
 
