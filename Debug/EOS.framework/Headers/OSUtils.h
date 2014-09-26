@@ -66,7 +66,7 @@
 
 + (void) runBlockOnBackground: (dispatch_block_t) blk;
 
-+ (DefaultSandbox *) getSandboxFromState: (lua_State *) L;
++ (AppSandbox *) getSandboxFromState: (lua_State *) L;
 
 + (void) unRef: (NSObject *) ref;
 

@@ -25,7 +25,6 @@
     NSMutableArray *takePhotoActions;
 }
 
-@property (nonatomic, assign) PageSandbox *pageSandbox;
 @property (nonatomic, assign) id<AdvancedTakePhotoDelegate> processDelegate;
 @property (nonatomic, readonly) NSDictionary *option;
 

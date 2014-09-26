@@ -12,7 +12,7 @@
 
 - (void) onNew;
 - (void) onLoaded;
-- (void) onCreated;
+- (void) onCreated: (AppContext *) context;
 - (void) onReady;
 - (void) onFronted;
 - (void) onIdle;

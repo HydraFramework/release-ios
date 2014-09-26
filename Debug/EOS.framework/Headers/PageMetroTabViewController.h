@@ -35,6 +35,7 @@
 }
 
 @property (nonatomic, assign) PageSandbox *pageSandbox;
+@property (nonatomic, readonly) AppContext *context;
 
 @property (nonatomic, assign, setter = setViewControllers:, getter = getViewControllers) NSArray *viewControllers;
 

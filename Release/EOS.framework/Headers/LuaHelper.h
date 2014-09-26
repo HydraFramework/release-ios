@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AdvancedTakePhoto.h"
+#import "AppContext.h"
 
 #define CONFIRM_OK      1
 #define CONFIRM_CANCEL  0
@@ -29,16 +30,16 @@
 
 - (NSString *) dump: (NSObject *) object;
 
-- (void) switchApp: (NSString *) appId withAnimation: (BOOL)animation;
-- (void) switchPage: (NSString *) appId : (BOOL)animation;
-- (void) pushApp: (NSString *) appId;
-- (void) pushPage: (NSString *) pageId withAppId: (NSString *) appId;
-- (void) pushPage: (NSString *) pageId withAppId: (NSString *) appId withUseCurrentStack: (BOOL) useCurrentStack;
-- (void) popPage: (id) top;
-- (void) popApp: (NSString *) toAppId;
-- (void) pushController: (NSString *) name withParam: (NSObject *) param;
-- (void) presentModal: (NSDictionary *) dic;
-- (void) dismissModal;
+- (void) switchApp: (AppContext *) context;
+- (void) switchPage: (AppContext *) context;
+- (void) pushApp: (AppContext *) context;
+//- (void) pushPage: (NSString *) pageId withAppId: (NSString *) appId;
+//- (void) pushPage: (NSString *) pageId withAppId: (NSString *) appId withUseCurrentStack: (BOOL) useCurrentStack;
+- (void) popPage: (AppContext *) context;
+- (void) popApp: (AppContext *) context;
+//- (void) pushController: (NSString *) name : (NSObject *) param;
+//- (void) presentModal: (NSDictionary *) dic;
+//- (void) dismissModal;
 
 - (void) _COROUTINE_startBusy: (NSString *) ycenter withTitle: (NSString *) title;
 - (void) _COROUTINE_stopBusy;

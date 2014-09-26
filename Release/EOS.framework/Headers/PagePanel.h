@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MessageUI/MessageUI.h>
+#import "AppContext.h"
 
 @class PageSandbox;
 @class PageM;
@@ -28,6 +29,8 @@
 - (void) onBackend;
 
 - (PageM *) getModel;
+
+- (void) setContext: (AppContext *) context;
 
 - (PageSandbox *) getPageSandbox;
 

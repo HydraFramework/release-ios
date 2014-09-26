@@ -36,7 +36,6 @@
 //@property (nonatomic, readonly) LuaState *state;
 
 @property (nonatomic, readonly) BOOL EOS_DEBUG_BOOL;
-@property (nonatomic, readonly) BOOL EOS_COMPATIBLE_BOOL;
 @property (nonatomic, readonly) BOOL EOS_DEBUGGER_BOOL;
 @property (nonatomic, assign) BOOL screenAutoRotation;
 @property (nonatomic, assign) BOOL statusBarHidden;

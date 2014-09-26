@@ -15,10 +15,8 @@
 @class PageTabBarControllerWrapper;
 
 @interface PageTabBarController : UITabBarController <PagePanel, UITabBarControllerDelegate, LuaObjectProxyCompatible, IPageTabBarController>{
-    PageM *model;
     NSURL *pageURL;
     PageSandbox *pageSandbox;
-    NSMutableArray *viewControllerList;
     PageTabBarControllerWrapper *wrapper;
     BOOL created;
     UIViewController<PagePanel> *parent;
@@ -26,6 +24,7 @@
 
 @property (nonatomic, readonly) NSMutableArray *viewControllerList;
 @property (nonatomic, readonly) PageM *model;
+@property (nonatomic, readonly) AppContext *context;
 
 - (UIViewController *) buildViewController: (TabItemM *) tm;
 

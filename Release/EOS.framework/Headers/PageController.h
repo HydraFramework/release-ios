@@ -13,7 +13,7 @@
 #import "PagePanel.h"
 #import "ViewWidget.h"
 
-@interface PageController : UIViewController <PagePanel, MFMessageComposeViewControllerDelegate, UIGestureRecognizerDelegate>{
+@interface PageController : UIViewController <PagePanel, UIGestureRecognizerDelegate>{
     NSURL *pageURL;
     PageSandbox *pageSandbox;
     
@@ -34,5 +34,6 @@
 }
 
 @property (nonatomic, strong) PageM *model;
+@property (nonatomic, readonly) AppContext *context;
 
 @end

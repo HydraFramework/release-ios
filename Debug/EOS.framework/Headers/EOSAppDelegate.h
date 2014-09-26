@@ -13,11 +13,13 @@
 #import "IAppManagementService.h"
 #import "ESRegistry.h"
 #import "GlobalSandboxDelegate.h"
+#import "AppContext.h"
+#import <MessageUI/MessageUI.h>
 
 @class AppParam;
 @class ViewWidget;
 
-@interface EOSAppDelegate : UIResponder <UIApplicationDelegate, GlobalSandboxDelegate>{
+@interface EOSAppDelegate : UIResponder <UIApplicationDelegate, GlobalSandboxDelegate, MFMessageComposeViewControllerDelegate>{
     GlobalSandbox *globalSandbox;
     RootViewController *rootViewController;
     RootNavViewController *rootNavViewController;
@@ -50,16 +52,16 @@ if ([NSDate timeIntervalSinceReferenceDate] - lastChangeViewStack < 0.5) {    \
 @property (nonatomic, strong) UIView *busyView;
 @property (nonatomic, strong) UIProgressView *progressView;
 
-- (BOOL) switchApp: (AppParam *) params;
-- (BOOL) switchPage: (AppParam *) params;
-- (BOOL) pushApp: (AppParam *) params;
-- (BOOL) popPage: (AppParam *) params;
-- (BOOL) popApp: (AppParam *) params;
+- (BOOL) switchApp: (AppContext *) context;
+- (BOOL) switchPage: (AppContext *) context;
+- (BOOL) pushApp: (AppContext *) context;
+- (BOOL) popPage: (AppContext *) context;
+- (BOOL) popApp: (AppContext *) context;
 
-- (void) presentModal: (ViewWidget *) widget;
+- (void) presentModal: (AppContext *) context;
 - (void) dismissModal;
 
-- (void) reloadPage: (AppParam *) params;
+- (void) reloadPage: (AppContext *) context;
 
 - (void) reloadTopSize;
 
