@@ -72,7 +72,7 @@ SPEC CHECKSUMS:
   event-ssl-curl: 2eef0fbe6732b4e010a2475576f431bb3b3f97b1
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  lua52: 651ac5b37e015dd865ea7e01eea6a902f5d265ef
+  lua52: 5a1a4de17de0040be4cd70e91057c0baad2d5b18
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   TouchJSON: b40940e40e53bb9b1ad60c63e01ed83bff93d53e
