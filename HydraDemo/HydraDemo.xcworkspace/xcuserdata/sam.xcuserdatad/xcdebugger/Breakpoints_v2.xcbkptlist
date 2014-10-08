@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../hydra-ios/EOSFramework/event/action/EventActionWrapper.m"
-            timestampString = "433418644.412529"
+            filePath = "../../hydra-ios/EOSFramework/LuaCore/LuaFunction.m"
+            timestampString = "434456911.704317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-__gc"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "-executeWithReturnValues:withArrayArguments:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

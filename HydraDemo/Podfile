@@ -1,10 +1,7 @@
 platform :ios, '6.0.0'
 
-# #run on new env guides.
-# pod repo remove master
-# pod repo add master http://git.luafan.com/Specs.git
-# pod install
-# #search project, add static before base64_encode, "unsigned static base64_encode"
+# using mirror in china
+source 'http://git.luafan.com/Specs.git'
 
 pod 'DTCoreText', '~> 1.6.12'
 pod 'TouchJSON', '~> 1.1'
@@ -20,7 +17,7 @@ pod 'GZIP', '~> 1.0.2'
 pod 'AnimatedGIFImageSerialization', '~> 0.2.0'
 
 #pod 'lua51',:git=>"http://git.luafan.com/lua51.git"
-pod 'lua52',:git=>"https://github.com/HydraFramework/lua52.git"
+pod 'lua52',:git=>"http://git.luafan.com/lua52.git"
 pod 'Box2D',:git=>"http://git.luafan.com/HydraDependencyBox2D.git"
 pod 'event-ssl-curl',:git=>"http://git.luafan.com/libevent-openssl-tor-libcurl.git"
 
