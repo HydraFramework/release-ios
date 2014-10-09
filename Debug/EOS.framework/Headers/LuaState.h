@@ -35,6 +35,4 @@
 
 + (void) exceptionAlert: (NSString *) message;
 
-+ (void) resumeForCoroutine: (lua_State *) cL withArgCount: (int) count;
-
 @end
