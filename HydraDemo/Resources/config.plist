@@ -18,6 +18,8 @@
 		<string>marykay.122.2o7.net</string>
 		<key>OmnitureReportSuiteIDs</key>
 		<string>marykaychinamobileappintouch</string>
+		<key>LocalPath</key>
+		<string>Local</string>
 	</dict>
 	<key>Amazon</key>
 	<dict>

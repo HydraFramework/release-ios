@@ -3,3 +3,5 @@ HydraDemo/Pods
 */.DS_Store
 *.xccheckout
 /xcuserdata/
+
+HydraDemo/HydraDemo.xcworkspace/xcuserdata/*
