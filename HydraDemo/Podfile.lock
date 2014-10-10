@@ -26,10 +26,10 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.3):
     - DTFoundation/Core
-  - event-ssl-curl (0.0.1)
-  - FMDB/common (2.3)
+  - event-ssl-curl (1.0.5)
+  - FMDB/common (2.4)
   - GZIP (1.0.3)
-  - Hydra/debug (3.1.0):
+  - Hydra/Debug52 (3.1.6):
     - AnimatedGIFImageSerialization (~> 0.2.0)
     - ASIHTTPRequest (~> 1.8.2)
     - CocoaAsyncSocket (~> 7.3.5)
@@ -42,7 +42,7 @@ PODS:
     - UIDevice-Hardware (~> 0.1.3)
     - ZBarSDK (~> 1.3.1)
     - ZipArchive (~> 1.2.0)
-  - lua52 (0.0.1)
+  - lua52 (0.0.5)
   - NSData+Base64 (1.0.0)
   - Reachability (3.1.1)
   - TouchJSON (1.1)
@@ -51,33 +51,23 @@ PODS:
   - ZipArchive (1.2.0)
 
 DEPENDENCIES:
-  - Box2D (from `http://git.luafan.com/HydraDependencyBox2D.git`)
-  - event-ssl-curl (from `http://git.luafan.com/libevent-openssl-tor-libcurl.git`)
-  - Hydra/debug (from `http://git.luafan.com/release-ios.git`)
-  - lua52 (from `http://git.luafan.com/lua52.git`)
-
-EXTERNAL SOURCES:
-  Box2D:
-    :git: http://git.luafan.com/HydraDependencyBox2D.git
-  event-ssl-curl:
-    :git: http://git.luafan.com/libevent-openssl-tor-libcurl.git
-  Hydra:
-    :git: http://git.luafan.com/release-ios.git
-  lua52:
-    :git: http://git.luafan.com/lua52.git
+  - Box2D (~> 0.0.2)
+  - event-ssl-curl (~> 1.0.5)
+  - Hydra/Debug52 (~> 3.1.6)
+  - lua52 (~> 0.0.5)
 
 SPEC CHECKSUMS:
   AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
   ASIHTTPRequest: 2c8335b49410c0e2ad42829c438e74d454b77590
-  Box2D: 45fb6e364d33da32f7ed49b42fccc79d0c874eec
+  Box2D: 9165bef8298f364c5374f37ec17cfd26e94a584f
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   DTCoreText: 84eb8ba2e70448fdd9d837540e371f9f587b65ba
   DTFoundation: 360bc65ab44f588611f47324b8cfb0f18e04b263
-  event-ssl-curl: 2eef0fbe6732b4e010a2475576f431bb3b3f97b1
-  FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
+  event-ssl-curl: ea519faa6ee085aa02e2356d06b7a36967345d86
+  FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  Hydra: a2afed863629dcb7abbbaf6f3bc21c9dc523e574
-  lua52: 5a1a4de17de0040be4cd70e91057c0baad2d5b18
+  Hydra: e05c90990d92bf88b0ab4a8a245cf2dbece49e0f
+  lua52: 57d573e9a097430db03a671aa2e2ec2d2d32396c
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   TouchJSON: b40940e40e53bb9b1ad60c63e01ed83bff93d53e
@@ -85,4 +75,4 @@ SPEC CHECKSUMS:
   ZBarSDK: 3ed560856963f765b66d834f464590bd6ba13b44
   ZipArchive: 1753357f3081f87ab5776d4c4ff25f7ddefd2fd1
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.1

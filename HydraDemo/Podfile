@@ -1,14 +1,13 @@
 platform :ios, '6.0.0'
 
-# #run on new env guides.
-# pod repo remove master
-# pod repo add master http://git.luafan.com/Specs.git
-# pod install
-# #search project, add static before base64_encode, "unsigned static base64_encode"
+# using mirror in china
+source 'http://git.luafan.com/Specs.git'
 
-#pod 'lua51',:git=>"http://git.luafan.com/lua51.git"
-pod 'lua52',:git=>"http://git.luafan.com/lua52.git"
-pod 'Box2D',:git=>"http://git.luafan.com/HydraDependencyBox2D.git"
-pod 'event-ssl-curl',:git=>"http://git.luafan.com/libevent-openssl-tor-libcurl.git"
+source 'http://git.luafan.com/HydraSpecs.git'
 
-pod 'Hydra/debug',:git=>"http://git.luafan.com/release-ios.git"
+# HydraSpecs
+pod 'Box2D', '~> 0.0.2'
+pod 'event-ssl-curl', '~> 1.0.5'
+
+pod 'lua52', '~> 0.0.5'
+pod 'Hydra/Debug52', '~> 3.1.6'
