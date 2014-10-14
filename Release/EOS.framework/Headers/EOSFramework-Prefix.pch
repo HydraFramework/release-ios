@@ -18,7 +18,7 @@
 #define DEBUG_EOS
 #endif
 
-//#define ENABLE_OPENCV
+#define ENABLE_OPENCV
 //#define USING_PRIVATE_FRAMEWORK
 
 //#define DEPREATE_UDID
