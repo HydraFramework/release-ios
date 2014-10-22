@@ -15,7 +15,7 @@ PODS:
     - ASIHTTPRequest/Core
   - Box2D (0.0.2)
   - CocoaAsyncSocket (7.3.5)
-  - DTCoreText (1.6.13):
+  - DTCoreText (1.6.14):
     - DTFoundation/Core (~> 1.7.1)
     - DTFoundation/DTAnimatedGIF (~> 1.7.1)
     - DTFoundation/DTHTMLParser (~> 1.7.1)
@@ -61,7 +61,7 @@ SPEC CHECKSUMS:
   ASIHTTPRequest: 2c8335b49410c0e2ad42829c438e74d454b77590
   Box2D: 9165bef8298f364c5374f37ec17cfd26e94a584f
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
-  DTCoreText: 84eb8ba2e70448fdd9d837540e371f9f587b65ba
+  DTCoreText: 1fc0aadfa238d14c6cc56035af4e2b76b958e3b1
   DTFoundation: 360bc65ab44f588611f47324b8cfb0f18e04b263
   event-ssl-curl: 1ffb477edb8e3216bdd27d1597b44abd64b2fcf7
   FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
@@ -75,4 +75,4 @@ SPEC CHECKSUMS:
   ZBarSDK: 3ed560856963f765b66d834f464590bd6ba13b44
   ZipArchive: 1753357f3081f87ab5776d4c4ff25f7ddefd2fd1
 
-COCOAPODS: 0.34.1
+COCOAPODS: 0.34.4
