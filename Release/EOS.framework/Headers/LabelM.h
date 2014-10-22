@@ -11,6 +11,8 @@
 
 @interface LabelM : UIWidgetM
 
+@property (nonatomic, assign) float charSpace;
+@property (nonatomic, assign) float lineSpace;
 @property (nonatomic, strong) NSObject *text;
 @property (nonatomic, strong) NSObject *color;
 @property (nonatomic, strong) NSString *fontName;

@@ -13,6 +13,7 @@
 
 @property (nonatomic, assign) BOOL password;
 @property (nonatomic, assign) BOOL editable;
+@property (nonatomic, assign) BOOL doneable;
 @property (nonatomic, assign) int maxLength;
 @property (nonatomic, assign) UIKeyboardType keyboard;
 @property (nonatomic, assign) UIReturnKeyType returnType;
