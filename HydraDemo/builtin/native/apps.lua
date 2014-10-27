@@ -54,7 +54,7 @@ function pushNative(name, context, sandbox)
         if type(context) == "string" then
             context = json.decode(context)
         elseif type(context) ~= "table" then
-            context = {}
+            context = {param = context}
         end
         context.name = context
         context.sandbox = sandbox
