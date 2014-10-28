@@ -17,4 +17,7 @@
 - (void) onReloaded;
 - (void) onReady;
 
+- (void) onInstalled;
+- (void) onPatched: (NSString *) oldVersion;
+
 @end

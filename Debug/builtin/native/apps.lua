@@ -1,4 +1,5 @@
 local type = type
+local json = require "cjson"
 
 module(..., package.seeall)
 
@@ -50,13 +51,9 @@ end
 function pushNative(name, context, sandbox)
     if type(name) == "table" then
         return helper:pushController(name)
-    else
-        if type(context) == "string" then
-            context = json.decode(context)
-        elseif type(context) ~= "table" then
-            context = {param = context}
-        end
-        context.name = context
+    elseif type(context) ~= "table" then
+        context = {param = context}
+        context.name = name
         context.sandbox = sandbox
 
         return helper:pushController(context)
