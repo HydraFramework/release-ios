@@ -31,7 +31,7 @@
 	<key>DEV</key>
 	<dict>
 		<key>AppVersion</key>
-		<string>1.2.0</string>
+		<string>2.5.0</string>
 		<key>ServerAddress</key>
 		<string>http://app.dev.mkwap.cn/client/</string>
 	</dict>
