@@ -51,8 +51,10 @@ end
 function pushNative(name, context, sandbox)
     if type(name) == "table" then
         return helper:pushController(name)
-    elseif type(context) ~= "table" then
-        context = {param = context}
+    else
+        if type(context) ~= "table" then
+            context = {param = context}
+        end
         context.name = name
         context.sandbox = sandbox
 
