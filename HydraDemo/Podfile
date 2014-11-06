@@ -5,9 +5,20 @@ source 'http://git.luafan.com/Specs.git'
 
 source 'http://git.luafan.com/HydraSpecs.git'
 
+# read ../README.MD
+
+pod 'RegexKitLite', '~> 4.0'
+pod 'TencentOpenApiSDK', '~> 2.3.1'
+pod 'JSONKit-NoWarning', '~> 1.2'
+pod 'SSKeychain', '~> 1.2.2'
+
 # HydraSpecs
 pod 'Box2D', '~> 0.0.2'
 pod 'event-ssl-curl', '~> 1.0.5'
 
+#pod 'lua51',:git=>"http://git.luafan.com/lua51.git"
+#pod 'Hydra/Stable',:git=>"http://git.luafan.com/release-ios.git"
+
 pod 'lua52', '~> 0.0.5'
 pod 'Hydra/Debug52', '~> 3.1.6'
+pod 'OpenCV249', '~> 2.4.9'
