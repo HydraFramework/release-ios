@@ -26,7 +26,7 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.3):
     - DTFoundation/Core
-  - event-ssl-curl (1.0.7)
+  - event-ssl-curl (1.0.8)
   - FMDB/common (2.4)
   - GZIP (1.0.3)
   - lua52 (0.0.5)
@@ -63,7 +63,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   DTCoreText: 1fc0aadfa238d14c6cc56035af4e2b76b958e3b1
   DTFoundation: 360bc65ab44f588611f47324b8cfb0f18e04b263
-  event-ssl-curl: fc8c1113cc7a035929656b45619e9d11c4f5ec74
+  event-ssl-curl: f65da4841a1e5bb38d9248730ab16e5431e219a8
   FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
   lua52: 57d573e9a097430db03a671aa2e2ec2d2d32396c

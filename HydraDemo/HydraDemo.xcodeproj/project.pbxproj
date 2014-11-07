@@ -64,6 +64,7 @@
 		225EB5C3196BDF2A00ABB668 /* HydraDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HydraDemoTests-Info.plist"; sourceTree = "<group>"; };
 		225EB5C5196BDF2A00ABB668 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		225EB5C7196BDF2A00ABB668 /* HydraDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraDemoTests.m; sourceTree = "<group>"; };
+		22BB612D1A0CC405008A4288 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		22D57EFA19AC73A300B112AD /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		22F33E511A0C96E700A6950D /* libEOSStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEOSStatic.a; path = "../../hydra-ios/build/Debug-iphoneos/libEOSStatic.a"; sourceTree = "<group>"; };
 		22F33E531A0C96EE00A6950D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		225EB5A1196BDF2A00ABB668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22BB612D1A0CC405008A4288 /* libstdc++.6.0.9.dylib */,
 				22F33E551A0C97D400A6950D /* libEOSStatic.a */,
 				22F33E531A0C96EE00A6950D /* libPods.a */,
 				22F33E511A0C96E700A6950D /* libEOSStatic.a */,
@@ -471,7 +473,10 @@
 				GCC_PREFIX_HEADER = "HydraDemo/HydraDemo-Prefix.pch";
 				INFOPLIST_FILE = "HydraDemo/HydraDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -487,7 +492,10 @@
 				GCC_PREFIX_HEADER = "HydraDemo/HydraDemo-Prefix.pch";
 				INFOPLIST_FILE = "HydraDemo/HydraDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
