@@ -37,6 +37,7 @@
 //- (void) pushPage: (NSString *) pageId withAppId: (NSString *) appId withUseCurrentStack: (BOOL) useCurrentStack;
 - (void) popPage: (AppContext *) context;
 - (void) popApp: (AppContext *) context;
+- (void) pushController: (AppContext *) context;
 //- (void) pushController: (NSString *) name : (NSObject *) param;
 //- (void) presentModal: (NSDictionary *) dic;
 //- (void) dismissModal;
