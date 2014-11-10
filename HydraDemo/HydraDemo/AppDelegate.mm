@@ -19,18 +19,6 @@
 #import <EOS/DownloadService.h>
 #import <CoreText/CoreText.h>
 
-extern"C"{
-    
-    size_t fwrite$UNIX2003( const void *a, size_t b, size_t c, FILE *d )
-    
-    {
-        
-        return fwrite(a, b, c, d);
-        
-    }
-    
-}
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

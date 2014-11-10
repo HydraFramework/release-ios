@@ -9,45 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/lua51/lua-5.1.5/src/ldo.c"
-            timestampString = "433334600.450908"
+            filePath = "../../hydra-ios/EOSFramework/LuaCore/luafreeimage/dib_conv.c"
+            timestampString = "437310681.022481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "448"
-            endingLineNumber = "448"
-            landmarkName = "lua_yield()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../hydra-ios/EOSFramework/service/PhotoService.m"
-            timestampString = "433395391.970299"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-load:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../hydra-ios/EOSFramework/LuaCore/luacv/objects/IplImage.cpp"
-            timestampString = "436261210.978663"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "IplImage_gc(lua_State *L)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "dib_colorQuantize()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
