@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Hydra"
-  s.version      = "3.1.18"
+  s.version      = "3.1.19"
   s.summary      = "Hydra release."
   s.description  = <<-DESC
                    Hydra release 3.x.
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "samchang" => "sam.chang@me.com" }
   s.platform     = :ios, "6.0.0"
-  s.source       = { :git => "http://git.luafan.com/release-ios.git", :tag => "v3.1.18" }
+  s.source       = { :git => "http://git.luafan.com/release-ios.git", :tag => "v3.1.19" }
   s.frameworks   = 'AssetsLibrary', 'MessageUI', 'AddressBookUI', 'AddressBook', 'Accelerate', 'MapKit', 'AudioToolbox', 'CoreTelephony', 'QuickLook', 'Social', 'CoreLocation'
   s.libraries = 'resolv'
 
@@ -18,6 +18,16 @@ Pod::Spec.new do |s|
   s.subspec 'Stable' do |ss|
     ss.resource = 'Stable/builtin'
     ss.ios.vendored_frameworks = 'Stable/EOS.framework'
+  end
+
+  s.subspec 'Release51' do |ss|
+    ss.resource = 'Release51/builtin'
+    ss.ios.vendored_frameworks = 'Release51/EOS.framework'
+  end
+
+  s.subspec 'Debug51' do |ss|
+    ss.resource = 'Debug51/builtin'
+    ss.ios.vendored_frameworks = 'Debug51/EOS.framework'
   end
 
   s.subspec 'Release52' do |ss|
