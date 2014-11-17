@@ -56,7 +56,7 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<false/>
+			<true/>
 			<key>Key</key>
 			<string>debug_preference</string>
 			<key>Title</key>
