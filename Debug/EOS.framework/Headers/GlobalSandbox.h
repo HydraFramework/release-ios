@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "DefaultSandbox.h"
-#import "UploadDaemon.h"
 #import "GlobalSandboxInterface.h"
 #import "LuaObjectProxyCompatible.h"
 #import "LuaObjectProxy.h"
@@ -29,7 +28,6 @@
 @property (nonatomic, readonly) NSDictionary *environment;
 @property (nonatomic, readonly) NSString *appsRoot;
 @property (nonatomic, readonly) NSString *cacheRoot;
-@property (nonatomic, readonly) UploadDaemon *upService;
 
 @property (nonatomic, strong) NSString *userAgent;
 

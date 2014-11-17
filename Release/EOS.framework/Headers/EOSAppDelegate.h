@@ -71,5 +71,6 @@ if ([NSDate timeIntervalSinceReferenceDate] - lastChangeViewStack < 0.5) {    \
 - (void) stopBusy;
 
 - (void) initProxy;
+- (void) initBusyView;
 
 @end
