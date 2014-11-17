@@ -15,4 +15,9 @@
 @property (nonatomic, assign) BOOL zoomable;
 @property (nonatomic, assign) BOOL opaque;
 
+@property (nonatomic, strong) LuaFunction *didStartLoad;
+@property (nonatomic, strong) LuaFunction *didStopLoad;
+
+@property (nonatomic, assign) BOOL busyhidden;
+
 @end
