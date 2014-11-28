@@ -33,6 +33,8 @@
 #define EOS_RELEASE(x) x()
 #endif
 
+#define DEBUG_EOS_LOG(x,...) EOS_DEBUG(^{NSLog(@"[DEBUG_EOS] " x,__VA_ARGS__);})
+
 #define IOSx_to_IOS7_VIEWCONTROLLER(x) \
 if ([x respondsToSelector: @selector(setEdgesForExtendedLayout:)]) { \
 x.edgesForExtendedLayout = UIRectEdgeNone; \
