@@ -8,10 +8,11 @@
 
 #import "EventAction.h"
 #import "LuaTableCompatible.h"
+#import "AbstractLuaTableCompatible.h"
 
 @class EventDispatcher;
 
-@interface EventActionWrapper : NSObject <LuaTableCompatible>{
+@interface EventActionWrapper : AbstractLuaTableCompatible {
     EventAction *wrapped;
     EventKey key;
     EventDispatcher *dispatcher;
