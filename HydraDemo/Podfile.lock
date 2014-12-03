@@ -1,10 +1,10 @@
 PODS:
   - AnimatedGIFImageSerialization (0.2.0)
   - ASIHTTPRequest (1.8.2):
-    - ASIHTTPRequest/ASIWebPageRequest
-    - ASIHTTPRequest/CloudFiles
-    - ASIHTTPRequest/Core
-    - ASIHTTPRequest/S3
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
   - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
     - ASIHTTPRequest/Core
   - ASIHTTPRequest/CloudFiles (1.8.2):
@@ -20,13 +20,13 @@ PODS:
     - DTFoundation/DTAnimatedGIF (~> 1.7.1)
     - DTFoundation/DTHTMLParser (~> 1.7.1)
     - DTFoundation/UIKit (~> 1.7.1)
-  - DTFoundation/Core (1.7.3)
-  - DTFoundation/DTAnimatedGIF (1.7.3)
-  - DTFoundation/DTHTMLParser (1.7.3):
+  - DTFoundation/Core (1.7.4)
+  - DTFoundation/DTAnimatedGIF (1.7.4)
+  - DTFoundation/DTHTMLParser (1.7.4):
     - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.3):
+  - DTFoundation/UIKit (1.7.4):
     - DTFoundation/Core
-  - event-ssl-curl (1.0.8)
+  - event-ssl-curl (1.0.9)
   - FMDB/common (2.4)
   - GZIP (1.0.3)
   - lua52 (0.0.5)
@@ -62,8 +62,8 @@ SPEC CHECKSUMS:
   Box2D: 9165bef8298f364c5374f37ec17cfd26e94a584f
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   DTCoreText: 1fc0aadfa238d14c6cc56035af4e2b76b958e3b1
-  DTFoundation: 360bc65ab44f588611f47324b8cfb0f18e04b263
-  event-ssl-curl: f65da4841a1e5bb38d9248730ab16e5431e219a8
+  DTFoundation: 721a63964fb9acd64cb8c9d3d1642ee60bac3d6a
+  event-ssl-curl: feff6ffe1d6e016b294fafb82219f11dcedeb378
   FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
   lua52: 57d573e9a097430db03a671aa2e2ec2d2d32396c
@@ -75,4 +75,4 @@ SPEC CHECKSUMS:
   ZBarSDK: 3ed560856963f765b66d834f464590bd6ba13b44
   ZipArchive: 1753357f3081f87ab5776d4c4ff25f7ddefd2fd1
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.35.0
