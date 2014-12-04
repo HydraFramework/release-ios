@@ -74,7 +74,7 @@ dest;\
 /**The Model with this `Widget`*/
 @property (nonatomic, readonly) UIWidgetM *model; //dirtyModel
 @property (nonatomic, readonly) UIWidgetM *stableModel;
-@property (nonatomic, assign) PageSandbox *pageSandbox;
+@property (nonatomic, strong) PageSandbox *pageSandbox;
 
 @property (nonatomic, assign) ViewWidget *parent;
 @property (nonatomic, readonly, getter = getBackgroundColor) UIColor *backgroundColor;
