@@ -7,17 +7,117 @@
 		<key>Bootstrap</key>
 		<string>Bootstrap</string>
 		<key>AppVersion</key>
-		<string>1.2.0</string>
+		<string>2.1.0</string>
 		<key>AppName</key>
 		<string>com.marykay.china.mobilityApp</string>
 		<key>UserAgentSuffix</key>
 		<string>MaryKayMobility</string>
 		<key>ServerAddress</key>
-		<string>http://app.dev.mkwap.cn/client/</string>
+		<string>http://app.mkwap.cn/client/</string>
 		<key>OmnitureTrackingServer</key>
 		<string>marykay.122.2o7.net</string>
 		<key>OmnitureReportSuiteIDs</key>
-		<string>marykaychinamobileappintouchdev</string>
+		<string>marykaychinamobileappintouch</string>
+		<key>LocalPath</key>
+		<string>MaryKayInTouch</string>
+	</dict>
+	<key>Amazon</key>
+	<dict>
+		<key>AppVersion</key>
+		<string>1.0.0</string>
+		<key>ServerAddress</key>
+		<string>http://ec2-54-200-56-50.us-west-2.compute.amazonaws.com:9000/client/</string>
+	</dict>
+	<key>DEV</key>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5.0</string>
+		<key>ServerAddress</key>
+		<string>http://app.dev.mkwap.cn/client/</string>
+	</dict>
+	<key>PreProd</key>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5.0</string>
+		<key>AppName</key>
+		<string>com.marykay.us.demo</string>
+		<key>ServerAddress</key>
+		<string>http://app.us.mkwap.cn/client/</string>
+	</dict>
+	<key>QA</key>
+	<dict>
+		<key>ServerAddress</key>
+		<string>http://app.qa.mkwap.cn/client/</string>
+	</dict>
+	<key>STG</key>
+	<dict>
+		<key>ServerAddress</key>
+		<string>http://app.stg.mkwap.cn/client/</string>
+	</dict>
+	<key>PROD</key>
+	<dict>
+		<key>ServerAddress</key>
+		<string>http://app.mkwap.cn/client/</string>
+		<key>OmnitureReportSuiteIDs</key>
+		<string>marykaychinamobileappintouch</string>
+	</dict>
+	<key>K2</key>
+	<dict>
+		<key>Bootstrap</key>
+		<string>K2-Bootstrap</string>
+		<key>AppVersion</key>
+		<string>1.0.0</string>
+		<key>ServerAddress</key>
+		<string>http://k2.dev.hpeos.com/client/</string>
+	</dict>
+	<key>Company</key>
+	<dict>
+		<key>AppVersion</key>
+		<string>1.0.0</string>
+		<key>ServerAddress</key>
+		<string>http://eos.dev.hpeos.com/client/</string>
+	</dict>
+	<key>ZJ</key>
+	<dict>
+		<key>Bootstrap</key>
+		<string>Bootstrap</string>
+		<key>AppVersion</key>
+		<string>1.0.0</string>
+		<key>ServerAddress</key>
+		<string>http://zhongji.dev.hpeos.com/client/</string>
+	</dict>
+	<key>MT</key>
+	<dict>
+		<key>Bootstrap</key>
+		<string>Bootstrap</string>
+		<key>AppVersion</key>
+		<string>1.0.0</string>
+		<key>AppName</key>
+		<string>com.hp.eos.client</string>
+		<key>ServerAddress</key>
+		<string>http://mtravel.dev.hpeos.com/client/</string>
+	</dict>
+	<key>HPEOS</key>
+	<dict>
+		<key>Bootstrap</key>
+		<string>Bootstrap</string>
+		<key>AppVersion</key>
+		<string>1.0.0</string>
+		<key>AppName</key>
+		<string>com.marykay.china.mobilityApp</string>
+		<key>ServerAddress</key>
+		<string>http://mkc.dev.hpeos.com/client/</string>
+	</dict>
+	<key>AP</key>
+	<dict>
+		<key>Bootstrap</key>
+		<string>Bootstrap</string>
+		<key>AppVersion</key>
+		<string>1.0.0</string>
+		<key>AppName</key>
+		<string>com.hp.eos.client</string>
+		<key>ServerAddress</key>
+		<string>http://dev.ap.mkwap.cn/client/</string>
 	</dict>
 </dict>
 </plist>

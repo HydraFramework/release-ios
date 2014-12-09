@@ -23,6 +23,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [GlobalSandbox sandbox].screenAutoRotation = YES;
+    
     [UIApplication sharedApplication].statusBarHidden = NO;
     BOOL ret = [super application: application didFinishLaunchingWithOptions: launchOptions];
     
@@ -30,6 +32,7 @@
     // [[ESRegistry getInstance] registerService: @"MyService" withName: @"myservice"];
     // [WidgetMap bind: @"widgetname" withModelClassName: @"WidgetModel" withWidgetClassName: @"WidgetClassName"];
     // [ControllerMap bind:@"controllername" withClass:@"ControllerClassName"];
+    [WidgetMap bind: @"moveup" withModelClassName: @"MoveupM" withWidgetClassName: @"MoveupWidget"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor blackColor];

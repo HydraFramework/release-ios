@@ -1,10 +1,10 @@
 PODS:
   - AnimatedGIFImageSerialization (0.2.0)
   - ASIHTTPRequest (1.8.2):
-    - ASIHTTPRequest/ASIWebPageRequest
-    - ASIHTTPRequest/CloudFiles
-    - ASIHTTPRequest/Core
-    - ASIHTTPRequest/S3
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
   - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
     - ASIHTTPRequest/Core
   - ASIHTTPRequest/CloudFiles (1.8.2):
@@ -20,16 +20,16 @@ PODS:
     - DTFoundation/DTAnimatedGIF (~> 1.7.1)
     - DTFoundation/DTHTMLParser (~> 1.7.1)
     - DTFoundation/UIKit (~> 1.7.1)
-  - DTFoundation/Core (1.7.3)
-  - DTFoundation/DTAnimatedGIF (1.7.3)
-  - DTFoundation/DTHTMLParser (1.7.3):
+  - DTFoundation/Core (1.7.4)
+  - DTFoundation/DTAnimatedGIF (1.7.4)
+  - DTFoundation/DTHTMLParser (1.7.4):
     - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.3):
+  - DTFoundation/UIKit (1.7.4):
     - DTFoundation/Core
-  - event-ssl-curl (1.0.7)
+  - event-ssl-curl (1.0.9)
   - FMDB/common (2.4)
   - GZIP (1.0.3)
-  - Hydra/Debug52 (3.1.16):
+  - Hydra/Resource52 (3.1.25):
     - AnimatedGIFImageSerialization (~> 0.2.0)
     - ASIHTTPRequest (~> 1.8.2)
     - CocoaAsyncSocket (~> 7.3.5)
@@ -58,7 +58,7 @@ PODS:
 DEPENDENCIES:
   - Box2D (~> 0.0.2)
   - event-ssl-curl (~> 1.0.5)
-  - Hydra/Debug52 (~> 3.1.6)
+  - Hydra/Resource52 (~> 3.1.25)
   - JSONKit-NoWarning (~> 1.2)
   - lua52 (~> 0.0.5)
   - OpenCV249 (~> 2.4.9)
@@ -72,11 +72,11 @@ SPEC CHECKSUMS:
   Box2D: 9165bef8298f364c5374f37ec17cfd26e94a584f
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   DTCoreText: 1fc0aadfa238d14c6cc56035af4e2b76b958e3b1
-  DTFoundation: 360bc65ab44f588611f47324b8cfb0f18e04b263
-  event-ssl-curl: fc8c1113cc7a035929656b45619e9d11c4f5ec74
+  DTFoundation: 721a63964fb9acd64cb8c9d3d1642ee60bac3d6a
+  event-ssl-curl: feff6ffe1d6e016b294fafb82219f11dcedeb378
   FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  Hydra: f7e23b32b0f748aa921bafb46c5ac0d19615608f
+  Hydra: 0cfeebe90a8612139586ff689ab95e9417a1f771
   JSONKit-NoWarning: fc8d6dd8ec65e303867d1bd274632fc60a4a8ab9
   lua52: 57d573e9a097430db03a671aa2e2ec2d2d32396c
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
@@ -90,4 +90,4 @@ SPEC CHECKSUMS:
   ZBarSDK: 3ed560856963f765b66d834f464590bd6ba13b44
   ZipArchive: 1753357f3081f87ab5776d4c4ff25f7ddefd2fd1
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.35.0

@@ -11,13 +11,35 @@
 			<string>Environment</string>
 			<key>Titles</key>
 			<array>
+				<string>Amazon</string>
+				<string>K2</string>
 				<string>Development</string>
+				<string>Pre Production</string>
+				<string>QA</string>
+				<string>Stage</string>
+				<string>Production</string>
+				<string>EOS DEV</string>
+				<string>ZJ</string>
+				<string>MTravel</string>
+				<string>HPEOS</string>
+				<string>Asia Pacific</string>
 			</array>
 			<key>Key</key>
 			<string>env_preference</string>
 			<key>Values</key>
 			<array>
+				<string>Amazon</string>
+				<string>K2</string>
 				<string>DEV</string>
+				<string>PreProd</string>
+				<string>QA</string>
+				<string>STG</string>
+				<string>PROD</string>
+				<string>Company</string>
+				<string>ZJ</string>
+				<string>MT</string>
+				<string>HPEOS</string>
+				<string>AP</string>
 			</array>
 			<key>DefaultValue</key>
 			<string>DEV</string>
@@ -34,7 +56,7 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<false/>
+			<true/>
 			<key>Key</key>
 			<string>debug_preference</string>
 			<key>Title</key>
