@@ -29,7 +29,7 @@ PODS:
   - event-ssl-curl (1.0.9)
   - FMDB/common (2.4)
   - GZIP (1.0.3)
-  - Hydra/Resource52 (3.1.25):
+  - Hydra/Resource52 (3.1.26):
     - AnimatedGIFImageSerialization (~> 0.2.0)
     - ASIHTTPRequest (~> 1.8.2)
     - CocoaAsyncSocket (~> 7.3.5)
@@ -76,7 +76,7 @@ SPEC CHECKSUMS:
   event-ssl-curl: feff6ffe1d6e016b294fafb82219f11dcedeb378
   FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
-  Hydra: 0cfeebe90a8612139586ff689ab95e9417a1f771
+  Hydra: 346853af2167b577eb72c508aa9971c7f015d02b
   JSONKit-NoWarning: fc8d6dd8ec65e303867d1bd274632fc60a4a8ab9
   lua52: 57d573e9a097430db03a671aa2e2ec2d2d32396c
   NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
