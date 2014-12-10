@@ -26,7 +26,7 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.4):
     - DTFoundation/Core
-  - event-ssl-curl (1.0.9)
+  - event-ssl-curl (1.0.10)
   - FMDB/common (2.4)
   - GZIP (1.0.3)
   - Hydra/Resource52 (3.1.26):
@@ -73,7 +73,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   DTCoreText: 1fc0aadfa238d14c6cc56035af4e2b76b958e3b1
   DTFoundation: 721a63964fb9acd64cb8c9d3d1642ee60bac3d6a
-  event-ssl-curl: feff6ffe1d6e016b294fafb82219f11dcedeb378
+  event-ssl-curl: c1a3fc7fc1eeaa2d130af876bac553bafeac6289
   FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
   Hydra: 346853af2167b577eb72c508aa9971c7f015d02b
