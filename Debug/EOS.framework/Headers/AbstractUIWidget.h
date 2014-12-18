@@ -115,7 +115,11 @@ dest;\
 
 /** Tell parent what's the exactly rect of the widget, parent size should not include it's padding */
 - (CGRect) measureRect: (CGSize) parentContentSize;
+- (CGRect) measureRect: (CGSize) parentContentSize withAbsolute: (BOOL) absolute;
+
 - (CGRect) measureSelfRect: (CGSize) parentContentSize;
+- (CGRect) measureSelfRect: (CGSize) parentContentSize withAbsolute: (BOOL) absolute;
+
 - (CGSize) sizeUnionMargin: (CGSize) parentContentSize;
 
 - (void) reloadRect;
