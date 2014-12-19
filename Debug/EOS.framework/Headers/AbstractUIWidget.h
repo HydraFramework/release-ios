@@ -124,6 +124,7 @@ dest;\
 
 - (void) reloadRect;
 - (void) setViewFrame: (CGRect) rect;
+- (CGRect) getActualCurrentRect;
 
 - (void) setDataProvider: (id) object;
 - (void) setData: (NSObject *) data;
