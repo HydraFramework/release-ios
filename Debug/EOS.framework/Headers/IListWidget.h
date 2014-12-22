@@ -21,4 +21,6 @@
 
 - (void) reload: (NSNumber *) section : (NSNumber *) row;
 
+- (void) closeDragDown;
+
 @end

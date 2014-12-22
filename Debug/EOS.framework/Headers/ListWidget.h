@@ -10,6 +10,7 @@
 #import "AbstractUIWidget.h"
 #import "IListWidget.h"
 #import "ListM.h"
+#import "EGORefreshTableHeaderView.h"
 
 @interface ListSectionModel : NSObject 
 
@@ -27,10 +28,11 @@
 @protocol ListWidgetDelegate <NSObject>
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
 
 @end
 
-@interface ListWidget : AbstractUIWidget <UITableViewDataSource, UITableViewDelegate, IListWidget> {
+@interface ListWidget : AbstractUIWidget <UITableViewDataSource, UITableViewDelegate, IListWidget, EGORefreshTableHeaderDelegate> {
     NSMutableArray *sectionList;
     NSMutableArray *sectionIndexTitles;
     NSMutableDictionary *sectionHeaderWidgetMap;
@@ -39,12 +41,15 @@
     
     NSMutableArray *pendingReloadCellIndexPaths;
     BOOL reloadPending;
+
+    BOOL dragDowning;
 }
 
 @property (nonatomic, readonly) ListM *model;
 @property (nonatomic, readonly) ListM *stableModel;
 
 @property (nonatomic, readonly) UITableView *listView;
+@property (nonatomic, readonly) EGORefreshTableHeaderView *refreshTableView;
 
 @property (nonatomic, assign) id<ListWidgetDelegate> delegate;
 
