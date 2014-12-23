@@ -14,7 +14,6 @@
 		2256DA6F196BE51F00830A10 /* busy_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA6B196BE51F00830A10 /* busy_background.png */; };
 		2256DA70196BE51F00830A10 /* busy_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA6C196BE51F00830A10 /* busy_background@2x.png */; };
 		2256DA71196BE51F00830A10 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA6D196BE51F00830A10 /* config.plist */; };
-		2256DA73196BEA0100830A10 /* builtin in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA72196BEA0100830A10 /* builtin */; };
 		225EB5A3196BDF2A00ABB668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225EB5A2196BDF2A00ABB668 /* Foundation.framework */; };
 		225EB5A5196BDF2A00ABB668 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225EB5A4196BDF2A00ABB668 /* CoreGraphics.framework */; };
 		225EB5A7196BDF2A00ABB668 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225EB5A6196BDF2A00ABB668 /* UIKit.framework */; };
@@ -50,7 +49,6 @@
 		2256DA6B196BE51F00830A10 /* busy_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busy_background.png; sourceTree = "<group>"; };
 		2256DA6C196BE51F00830A10 /* busy_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "busy_background@2x.png"; sourceTree = "<group>"; };
 		2256DA6D196BE51F00830A10 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
-		2256DA72196BEA0100830A10 /* builtin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = builtin; sourceTree = "<group>"; };
 		225EB59F196BDF2A00ABB668 /* HydraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HydraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225EB5A2196BDF2A00ABB668 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		225EB5A4196BDF2A00ABB668 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				22381AED1A3AC2DD002B4188 /* iphone6.png */,
-				2256DA72196BEA0100830A10 /* builtin */,
 				2256DA69196BE51E00830A10 /* Resources */,
 				2256DA67196BE2DD00830A10 /* Settings.bundle */,
 				225EB5A8196BDF2A00ABB668 /* HydraDemo */,
@@ -288,7 +285,6 @@
 				2256DA6F196BE51F00830A10 /* busy_background.png in Resources */,
 				2256DA68196BE2DD00830A10 /* Settings.bundle in Resources */,
 				2256DA6E196BE51F00830A10 /* Archive.zip in Resources */,
-				2256DA73196BEA0100830A10 /* builtin in Resources */,
 				2256DA70196BE51F00830A10 /* busy_background@2x.png in Resources */,
 				22381AEE1A3AC2DD002B4188 /* iphone6.png in Resources */,
 			);

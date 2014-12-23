@@ -84,7 +84,7 @@ function popPage(obj, sandbox)
             }
         else
             return helper:popPage{
-                appId = obj,
+                pageId = obj,
                 sandbox = sandbox
             }
         end
