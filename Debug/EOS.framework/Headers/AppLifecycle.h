@@ -20,4 +20,6 @@
 - (void) onInstalled;
 - (void) onPatched: (NSString *) oldVersion;
 
+- (NSDictionary *) skin_spec;
+
 @end

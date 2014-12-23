@@ -22,9 +22,6 @@
 
 @interface AppSandbox : DefaultSandbox <LuaObjectProxyCompatible, AppSandboxInterface>{
     LuaObjectProxy *proxy;
-    
-    @public
-    BOOL luaInitialized;
 }
 
 @property (nonatomic, readonly) GlobalSandbox *globalSandbox;

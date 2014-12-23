@@ -14,6 +14,7 @@
 }
 
 - (id) initWithPath: (NSURL *) filePath;
+- (id) initWithDictionary: (NSDictionary *) dic;
 
 - (float) getActualLength: (float) length;
 - (CGRect) getActualRect: (CGRect) rect;
