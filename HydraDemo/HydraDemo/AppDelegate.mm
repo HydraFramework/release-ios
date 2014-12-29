@@ -33,7 +33,8 @@
     // [WidgetMap bind: @"widgetname" withModelClassName: @"WidgetModel" withWidgetClassName: @"WidgetClassName"];
     // [ControllerMap bind:@"controllername" withClass:@"ControllerClassName"];
     [WidgetMap bind: @"moveup" withModelClassName: @"MoveupM" withWidgetClassName: @"MoveupWidget"];
-    
+    [WidgetMap bind: @"cube" withModelClassName: @"ViewM" withWidgetClassName: @"CubeWidget"];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
