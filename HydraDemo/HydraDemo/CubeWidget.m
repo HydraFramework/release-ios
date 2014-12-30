@@ -21,6 +21,9 @@
 
         UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget: self
                                                                                      action: @selector(onPanGesture:)];
+
+        panGesture.delaysTouchesBegan = YES;
+
         [v addGestureRecognizer: panGesture];
     }
     if (m.overflow == OverflowTypeHidden) {
@@ -32,11 +35,47 @@
     }
 }
 
+- (void) prepareForAnimationCube{
+    NSArray *copy = [subitems copy];
+    CGFloat w = view.bounds.size.width;
+
+    for (int i = 0; i < [copy count]; i++) {
+        AbstractUIWidget *widget = [copy objectAtIndex: i];
+
+        CALayer *layer = [widget innerView].layer;
+        if (i > 0) {
+            CATransform3D transform = CATransform3DIdentity;
+            transform = CATransform3DTranslate(transform, 0, 0, - w * sqrt(0.75));
+            transform = CATransform3DRotate(transform, M_PI_2 * 2/3 * i, 0, 1, 0);
+            transform = CATransform3DTranslate(transform, 0, 0, w * sqrt(0.75));
+
+            layer.transform = transform;
+        } else {
+            layer.transform = CATransform3DIdentity;
+        }
+
+        [[widget innerView] removeFromSuperview];
+        [layer removeFromSuperlayer];
+
+        [transformLayer addSublayer: layer];
+    }
+
+}
+
+- (void) endForAnimationCube{
+    AbstractUIWidget *widget = [subitems objectAtIndex: viewIndex];
+    [[widget innerView].layer removeFromSuperlayer];
+    [widget innerView].layer.transform = CATransform3DIdentity;
+
+    [view addSubview: [widget innerView]];
+}
+
 - (void) onPanGesture: (UIPanGestureRecognizer *) panGesture{
     CGPoint point = [panGesture locationInView: view];
     switch (panGesture.state) {
         case UIGestureRecognizerStateBegan:
             startPoint = point;
+            [self prepareForAnimationCube];
             break;
         case UIGestureRecognizerStateChanged:{
             if ((viewIndex == 0 && point.x > startPoint.x)
@@ -57,7 +96,7 @@
         }
             break;
         case UIGestureRecognizerStateCancelled:
-        case UIGestureRecognizerStateEnded:
+        case UIGestureRecognizerStateEnded: {
             if (point.x > startPoint.x && viewIndex > 0) {
                 viewIndex--;
                 rotationDelta -= M_PI_2 *2/3;
@@ -66,16 +105,21 @@
                 rotationDelta += M_PI_2 *2/3;
             }
 
-            [self refreshChildByViewIndex];
-
             CATransform3D transform = CATransform3DIdentity;
 
             transform = CATransform3DTranslate(transform, 0, 0, -view.bounds.size.width * sqrt(0.75));
             transform = CATransform3DRotate(transform, -rotationDelta, 0, 1, 0);
             transform = CATransform3DTranslate(transform, 0, 0, view.bounds.size.width * sqrt(0.75));
 
+            [CATransaction begin];
+            panGesture.enabled = NO;
+            [CATransaction setCompletionBlock:^{
+                [self endForAnimationCube];
+                panGesture.enabled = YES;
+            }];
             transformLayer.transform = transform;
-
+            [CATransaction commit];
+        }
             break;
 
         default:
@@ -120,7 +164,7 @@
             }
             [transformLayer addSublayer: layer];
 
-//            [view addSubview: [widget innerView]];
+            [view addSubview: [widget innerView]];
         }
 
         [view.layer addSublayer: transformLayer];

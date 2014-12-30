@@ -10,8 +10,12 @@
 
 @implementation CubeView
 
--(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
-    return self;
-}
+//-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+//    return self;
+//}
+
+//-(BOOL)touchesShouldBegin:(NSSet *)touches withEvent:(UIEvent *)event inContentView:(UIView *)view{
+//    return [super touchesShouldBegin: touches withEvent: event inContentView: view];
+//}
 
 @end

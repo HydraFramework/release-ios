@@ -10,7 +10,7 @@
 
 @class AbstractUIWidget;
 
-@interface CubeView : UIView
+@interface CubeView : UIScrollView
 
 @property (nonatomic, strong) AbstractUIWidget *widget;
 @property (nonatomic, readonly) UIView *actionView;
