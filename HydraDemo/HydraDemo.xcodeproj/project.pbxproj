@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222222DA1A53DD8C00CD1312 /* libEOSStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 222222D91A53DD8C00CD1312 /* libEOSStatic.a */; };
 		22381AEE1A3AC2DD002B4188 /* iphone6.png in Resources */ = {isa = PBXBuildFile; fileRef = 22381AED1A3AC2DD002B4188 /* iphone6.png */; };
 		22381AF01A3AC2E9002B4188 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22381AEF1A3AC2E9002B4188 /* Images.xcassets */; };
 		2256DA68196BE2DD00830A10 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2256DA67196BE2DD00830A10 /* Settings.bundle */; };
@@ -28,7 +29,6 @@
 		22D57EFB19AC73A300B112AD /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D57EFA19AC73A300B112AD /* libresolv.dylib */; };
 		22DE44301A5154F000D9A188 /* CubeWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE442F1A5154F000D9A188 /* CubeWidget.m */; };
 		22DE44331A516C0800D9A188 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE44321A516C0800D9A188 /* CubeView.m */; };
-		22F33E561A0C97D400A6950D /* libEOSStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F33E551A0C97D400A6950D /* libEOSStatic.a */; };
 		702425C9BEF45B0B1376A128 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51A3CE2B3F413484392EFD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		222222D91A53DD8C00CD1312 /* libEOSStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEOSStatic.a; path = "../../hydra-ios/build/Debug-iphoneos/libEOSStatic.a"; sourceTree = "<group>"; };
 		22381AED1A3AC2DD002B4188 /* iphone6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone6.png; sourceTree = "<group>"; };
 		22381AEF1A3AC2E9002B4188 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2239AB69196D0162007EA79A /* libEOSStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEOSStatic.a; path = "../../hydra-ios/build/Debug-iphoneos/libEOSStatic.a"; sourceTree = "<group>"; };
@@ -85,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F33E561A0C97D400A6950D /* libEOSStatic.a in Frameworks */,
+				222222DA1A53DD8C00CD1312 /* libEOSStatic.a in Frameworks */,
 				22D57EFB19AC73A300B112AD /* libresolv.dylib in Frameworks */,
 				225EB5A5196BDF2A00ABB668 /* CoreGraphics.framework in Frameworks */,
 				225EB5A7196BDF2A00ABB668 /* UIKit.framework in Frameworks */,
@@ -144,6 +145,7 @@
 		225EB5A1196BDF2A00ABB668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				222222D91A53DD8C00CD1312 /* libEOSStatic.a */,
 				22BB612D1A0CC405008A4288 /* libstdc++.6.0.9.dylib */,
 				22F33E551A0C97D400A6950D /* libEOSStatic.a */,
 				22F33E531A0C96EE00A6950D /* libPods.a */,
@@ -487,6 +489,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/sam/hydra/hydra-ios/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -506,6 +509,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/sam/hydra/hydra-ios/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

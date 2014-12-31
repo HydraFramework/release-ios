@@ -47,12 +47,12 @@ typedef enum{
 	UIActivityIndicatorView *_activityView;
 	
     ListWidget *listWidget;
-    ViewWidget *contentWidget;
 }
 
 - (id)initWithWidget:(ListWidget *) widget;
 
 @property(nonatomic,assign) NSObject <EGORefreshTableHeaderDelegate> *delegate;
+@property (nonatomic, readonly) ViewWidget *contentWidget;
 
 - (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;
