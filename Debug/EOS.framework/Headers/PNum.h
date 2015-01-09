@@ -21,6 +21,8 @@
 + (PNum *) pnumWithObject: (NSObject *) obj;
 + (PNum *) pnumWithValue: (float) v withPercentage: (BOOL) p;
 
++ (PNum *) zero;
+
 - (float) pixelValue: (float) parent;
 - (float) pixelValue: (float) parent withDefault: (float) v;
 

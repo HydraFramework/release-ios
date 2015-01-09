@@ -66,6 +66,9 @@ typedef enum{
 
 @property (nonatomic, assign) float borderWidth;
 @property (nonatomic, assign) float borderAlpha;
+
+@property (nonatomic, assign) float cornerRadius;
+
 @property (nonatomic, strong) NSObject *borderColor;
 
 @property (nonatomic, assign) BOOL touchDisabled;
