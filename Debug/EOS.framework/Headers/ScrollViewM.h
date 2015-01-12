@@ -14,4 +14,10 @@
 @property (nonatomic, assign) BOOL pagingEnabled;
 @property (nonatomic, assign) BOOL decelerationEnabled;
 
+@property (nonatomic, strong) UIWidgetM *dragDownLayout;
+@property (nonatomic, assign) CGFloat dragDownMinMovement;
+
+@property (nonatomic, strong) LuaFunction *onDragDownStateChanged;
+@property (nonatomic, strong) LuaFunction *onDragDownAction;
+
 @end

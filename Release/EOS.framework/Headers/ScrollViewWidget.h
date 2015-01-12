@@ -10,17 +10,22 @@
 #import "ViewWidget.h"
 #import "IScrollViewWidget.h"
 #import "ScrollViewM.h"
+#import "EGORefreshScrollView.h"
 
-@interface ScrollViewWidget : ViewWidget <IScrollViewWidget, UIScrollViewDelegate>{
+@interface ScrollViewWidget : ViewWidget <IScrollViewWidget, UIScrollViewDelegate, EGORefreshScrollViewDelegate>{
     CGPoint oldContentOffset;
     CGSize currentContentSize;
     CGPoint currentContentOffset;
     
     CGRect originalRect;
+    
+    BOOL dragDowning;
 }
 
 @property (nonatomic, readonly) ScrollViewM *model;
 @property (nonatomic, readonly) ScrollViewM *stableModel;
 @property (nonatomic, strong) AbstractUIWidget *editingFocusView;
+
+@property (nonatomic, readonly) EGORefreshScrollView *refreshScrollView;
 
 @end
