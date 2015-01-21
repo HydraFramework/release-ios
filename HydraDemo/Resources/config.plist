@@ -128,5 +128,14 @@
 		<key>ServerAddress</key>
 		<string>http://rongk.cloudapp.net:9000/client/</string>
 	</dict>
+	<key>UAT</key>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.6.0</string>
+		<key>ServerAddress</key>
+		<string>https://app.uat.mkwap.cn/client/</string>
+		<key>OmnitureReportSuiteIDs</key>
+		<string>marykaychinamobileappintouchdev</string>
+	</dict>
 </dict>
 </plist>

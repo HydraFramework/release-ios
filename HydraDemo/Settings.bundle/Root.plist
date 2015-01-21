@@ -24,6 +24,7 @@
 				<string>HPEOS</string>
 				<string>Asia Pacific</string>
 				<string>Order Dev</string>
+				<string>UAT</string>
 			</array>
 			<key>Key</key>
 			<string>env_preference</string>
@@ -42,6 +43,7 @@
 				<string>HPEOS</string>
 				<string>AP</string>
 				<string>OrderDev</string>
+				<string>UAT</string>
 			</array>
 			<key>DefaultValue</key>
 			<string>DEV</string>
