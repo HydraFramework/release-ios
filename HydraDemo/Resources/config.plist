@@ -137,5 +137,23 @@
 		<key>OmnitureReportSuiteIDs</key>
 		<string>marykaychinamobileappintouchdev</string>
 	</dict>
+	<key>MybizDev</key>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5.0</string>
+		<key>ServerAddress</key>
+		<string>http://mybizdeveos.cloudapp.net:9000/client/</string>
+		<key>OmnitureReportSuiteIDs</key>
+		<string>marykaychinamobileappintouch</string>
+	</dict>
+	<key>MybizPreProd</key>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5.0</string>
+		<key>ServerAddress</key>
+		<string>http://mybizpreprod.cloudapp.net:9000/client/</string>
+		<key>OmnitureReportSuiteIDs</key>
+		<string>marykaychinamobileappintouch</string>
+	</dict>
 </dict>
 </plist>

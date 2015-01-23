@@ -24,6 +24,8 @@
 - (float) getFontScale;
 
 - (float) getFontSize: (float) size;
+- (float) getRefFontSize: (float) size;
+
 - (float) getRefLength: (float) length;
 - (CGRect) getRefRect: (CGRect) rect;
 - (CGSize) getRefSize: (CGSize) size;

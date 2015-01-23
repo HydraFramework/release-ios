@@ -25,6 +25,8 @@
 				<string>Asia Pacific</string>
 				<string>Order Dev</string>
 				<string>UAT</string>
+				<string>Mybiz Dev</string>
+				<string>Mybiz PreProd</string>
 			</array>
 			<key>Key</key>
 			<string>env_preference</string>
@@ -44,6 +46,8 @@
 				<string>AP</string>
 				<string>OrderDev</string>
 				<string>UAT</string>
+				<string>MybizDev</string>
+				<string>MybizPreProd</string>
 			</array>
 			<key>DefaultValue</key>
 			<string>DEV</string>
