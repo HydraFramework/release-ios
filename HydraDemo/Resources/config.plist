@@ -122,11 +122,11 @@
 	<key>OrderDev</key>
 	<dict>
 		<key>AppVersion</key>
-		<string>1.0.0</string>
+		<string>2.5.0</string>
 		<key>AppName</key>
 		<string>com.marykay.china.mobilityApp</string>
 		<key>ServerAddress</key>
-		<string>http://rongk.cloudapp.net:9000/client/</string>
+		<string>http://daimi.cloudapp.net/client/</string>
 	</dict>
 	<key>UAT</key>
 	<dict>
