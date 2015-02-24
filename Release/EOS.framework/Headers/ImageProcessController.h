@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "MaskView.h"
 
-#define MAX_WIDTH 320
-#define MAX_HEIGHT 366
 //#define MIN_WIDTH 49
 //#define MIN_HEIGHT 69
 //#define SMALL_WIDTH 196
@@ -50,6 +48,9 @@
     MaskView *maskView;
     
     UIActivityIndicatorView *indicatorView;
+
+    CGFloat MAX_WIDTH;
+    CGFloat MAX_HEIGHT;
 }
 
 @property (nonatomic, strong) UIImage *clippedImage;
