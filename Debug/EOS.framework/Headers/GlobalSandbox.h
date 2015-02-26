@@ -13,6 +13,7 @@
 #import "LuaObjectProxy.h"
 #import "LuaState.h"
 #import "GlobalSandboxDelegate.h"
+#import "SettingsManager.h"
 
 @class AppSandbox;
 @class LuaHelper;
