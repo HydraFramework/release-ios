@@ -63,6 +63,12 @@
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
 		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Debug</string>
+		</dict>
+		<dict>
 			<key>DefaultValue</key>
 			<true/>
 			<key>Key</key>
@@ -71,6 +77,70 @@
 			<string>Debug</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Line</string>
+			<key>Key</key>
+			<string>debugline_preference</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Exception Alert</string>
+			<key>Key</key>
+			<string>exception_alert_preference</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Log</string>
+			<key>Key</key>
+			<string>log_preference</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Cleanup Module Cache Every Page</string>
+			<key>Key</key>
+			<string>cleanup_module_preference</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Download Speed Limit</string>
+			<key>Titles</key>
+			<array>
+				<string>10 KB</string>
+				<string>512 KB</string>
+				<string>1 MB</string>
+				<string>None</string>
+			</array>
+			<key>Key</key>
+			<string>downloadlimit_preference</string>
+			<key>DefaultValue</key>
+			<string>512K</string>
+			<key>Values</key>
+			<array>
+				<string>10KB</string>
+				<string>512KB</string>
+				<string>1MB</string>
+				<string>None</string>
+			</array>
 		</dict>
 		<dict>
 			<key>Type</key>
