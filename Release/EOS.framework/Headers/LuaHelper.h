@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "AdvancedTakePhoto.h"
-#import "AppContext.h"
 
 #define CONFIRM_OK      1
 #define CONFIRM_CANCEL  0

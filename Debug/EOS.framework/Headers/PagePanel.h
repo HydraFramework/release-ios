@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <MessageUI/MessageUI.h>
-#import "AppContext.h"
+
+#define AppContext NSMutableDictionary
 
 @class PageSandbox;
 @class PageM;

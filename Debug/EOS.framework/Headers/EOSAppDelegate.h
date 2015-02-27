@@ -13,8 +13,9 @@
 #import "IAppManagementService.h"
 #import "ESRegistry.h"
 #import "GlobalSandboxDelegate.h"
-#import "AppContext.h"
 #import <MessageUI/MessageUI.h>
+
+#define AppContext NSMutableDictionary
 
 @class AppParam;
 @class ViewWidget;
