@@ -14,6 +14,7 @@
 #import "AbstractLuaTableCompatible.h"
 #import "IAbstractUIWidget.h"
 #import "ILuaReference.h"
+#import "WidgetMap.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define APPLY_DIRTY_MODEL_PROP(key, dest) \

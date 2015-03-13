@@ -14,6 +14,7 @@
 #import "LuaState.h"
 #import "GlobalSandboxDelegate.h"
 #import "SettingsManager.h"
+#import "ESRegistry.h"
 
 @class AppSandbox;
 @class LuaHelper;

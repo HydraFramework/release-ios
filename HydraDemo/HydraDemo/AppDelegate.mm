@@ -18,12 +18,29 @@
 #import <EOS/UIApplication+UIApplication_AppDimensions.h>
 #import <EOS/DownloadService.h>
 #import <CoreText/CoreText.h>
+#import "WeixinService.h"
 
 @implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation{
+
+    WeixinService *shareweixin = (WeixinService *)[[ESRegistry getInstance] getService: @"weixin"];
+    [WXApi handleOpenURL: url delegate: shareweixin];
+
+    return [super application: application
+                      openURL: url
+            sourceApplication: sourceApplication
+                   annotation: annotation];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [GlobalSandbox sandbox].screenAutoRotation = YES;
+
+    [WXApi registerApp:@"wx3196491b6ae7d9a3"];
 
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)])
     {

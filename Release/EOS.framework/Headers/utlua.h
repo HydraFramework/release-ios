@@ -15,4 +15,6 @@ lua_State* utlua_open_state();
 lua_State* utlua_newthread(lua_State *L);
 int utlua_resume(lua_State *co, lua_State *from, int count);
 
+void d2tv(double x, struct timeval *tv);
+
 #endif

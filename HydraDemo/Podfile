@@ -5,7 +5,7 @@ source 'http://git.luafan.com/Specs.git'
 source 'http://git.luafan.com/HydraSpecs.git'
 
 pod 'RegexKitLite', '~> 4.0'
-pod 'TencentOpenApiSDK', '~> 2.3.1'
+#pod 'TencentOpenApiSDK', '~> 2.3.1'
 pod 'JSONKit-NoWarning', '~> 1.2'
 pod 'SSKeychain', '~> 1.2.2'
 
@@ -15,3 +15,4 @@ pod 'event-ssl-curl', '~> 1.0.5'
 pod 'lua52', '~> 0.0.5'
 pod 'OpenCV249', '~> 2.4.9'
 pod 'Hydra/Resource52', '~> 3.1.25'
+pod 'HydraWexinService', '~> 0.0.1'
